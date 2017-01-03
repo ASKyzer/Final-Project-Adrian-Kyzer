@@ -1,300 +1,268 @@
 * {
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.4;
   margin: 0;
   padding: 0;
+  font-family: arial;
+  line-height: 1.4;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+
 }
 
 a {
   text-decoration: none;
-  color: white;
 }
 
-/*body html {
-  color: white;
-  line-height: 1.4;
-  margin: 0;
-  padding: 0;
-}*/
-#mainNav {
-  padding: 0 15px;
-}
-.nav-btn {
-  background-color: #46166B;
-}
-.glyphicon {
-  color: white;
-}
-.nav-links {
-  font-family: 'Monserrat', helvetica, sans-serif;
-  text-transform: uppercase;
-  font-kerning: 3px;
-}
-
-#top-logo {
+.sugar-house {
+  font-size: 24px;
+  font-family: cursive;
   color: #46166B;
-  font-family: "Great Vibes", cursive;
-  font-size: 36px;
 }
 
-main {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  font-family: 'Monserrat', helvetica, sans-serif;
-}
+#main-content {
 
-.container-fluid {
-  margin: 0;
-  padding: 0;
 }
-
-.row {
-  margin: 0;
-}
-
-#sh-logo-container {
-    height: 600px;
-    width: 100%;
-    background-image: url(../images/spa-bg.jpg);
-    background-size: cover;
-    background-position: center;
+  .main-name-and-logo {
     display: flex;
-    align-content: center;
+    height: 100vh;
+    background-image: url(../images/purple-crystals-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-color: rgba(70, 22, 107, 1);
+    flex-direction: column;
     justify-content: center;
-    font-family: 'Montserrat';
-    text-transform: uppercase;
+    align-items: center;
+    /*padding-top: 100px;*/
   }
-
-  .book-online {
-    border: 1px solid white;
-    padding: 20px 50px;
-    margin-top: 50px;
+    .arrow-container {
+      text-align: right;
+    }
+    .down-arrow {
+      color: white;
+      font-size: 150px;
+      font-weight: lighter;
   }
-    #sh-logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-    }
-    #sh-logo-contents {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-items: center;
-
-    }
-      .logo-image {
-        width: 100%;
-      }
-      .since {
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-
-      }
-      .book-now {
-
-      }
-
-#welcome-container {
-  height: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding: 30px 45px;
-}
-  .description {
+  .welcome-to-the-sweet-life {
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
   }
-    .welcome {
-      text-align: center;
-      font-family: 'Montserrat';
-      font-size: 2em;
-      color: #46166B;
-      padding-bottom: 10px;
+    .sweet-life {
+      color: #eb8100;
+      font-family: 'Oxygen', sans-serif;
+      font-weight: bold;
+      font-size: 38px;
     }
-    .sh-description {
-      text-align: center;
+    .about-sh {
+      font-family: 'Questrial';
+      font-size: 16px;
       font-style: italic;
+      padding: 10px 20%;
+      line-height: 1.4;
+      text-align:center;
     }
 
-  #services-and-staff {
-    height: auto;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
+#services-offered {
+  /*display: flex;*/
 
-    .services-offered {
-      height: 100%;
-      padding: 0;
-      margin: 0;
-    }
-
-  #boutique-and-bridal {
-
-  }
-    .boutique {
-      /*height: 100%;*/
-    }
-    .sh-middle {
-      /*height: 100%;*/
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      margin: 10% 0;
-    }
-    .book-online-2 {
-      color: #46166B;
-      border: 1px solid gray;
-      padding: 20px 50px;
-      margin-top: 50px;
-      text-transform: uppercase;
-      font-size: 24px;
-    }
-
-#contact-and-social {
-  width: 100%;
-  height: 250px;
-  background-color: lightgray;
 }
-  .contact {
-    height: 100%;
-    background-image: url(../images/oldtown.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #46166B;
-    font-size: 4em;
-  }
-  .social-media {
-    height: 100%;
-  }
-
-.social-img {
-  width: 30px;
+#photos-divider {
+  display: inline-block;
   height: auto;
-}
-
-#staff-work {
+  width: 100%;
   margin: 0;
   padding: 0;
 }
+  .divider-pic {
 
-.our-work {
-  text-align: center;
-  padding: 30% 0;
-  font-size: 28px;
-  color: #46166B;
-  font-family: 'Montserrat';
-}
+  }
 
-.hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
-  background: #7a42ae;
-}
-
-.hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  padding: 50px 20px;
-}
-
-.hovereffect img {
-  display: block;
-  position: relative;
-  max-width: none;
-  width: calc(100% + 20px);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-10px,0,0);
-  transform: translate3d(-10px,0,0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.hovereffect:hover img {
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-.hovereffect h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  /*text-shadow: 1px 1px 5px #46166B;*/
-  position: relative;
-  font-size: 37px;
-  overflow: hidden;
-  padding: 0.5em 0;
-  background-color: transparent;
-}
-
-.hovereffect h2:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  content: '';
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(-100%,0,0);
-  transform: translate3d(-100%,0,0);
-}
-
-.hovereffect:hover h2:after {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-.hovereffect a, .hovereffect p {
-  padding-top: 2em;
-  color: #FFF;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(100%,0,0);
-  transform: translate3d(100%,0,0);
-}
-
-.hovereffect:hover a, .hovereffect:hover p {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-footer {
-  color: lightgray;
-  font-family: 'Raleway', Helvetica, arial, sans-serif;
-  padding: 10px 30px;
-  margin: 20px 0;
+/*#services {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}*/
+
+#hair-services {
+  display: flex;
+  justify-content: space-between;
 }
+.hair-service-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 15%;
+
+}
+
+#body-services {
+  display: flex;
+  justify-content: space-between;
+}
+
+  .body-service-list {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 15%;
+  }
+  #nail-services {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nail-service-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15%;
+  }
+
+.makeup-pic {
+  width: auto;
+  height: 405px;
+}
+
+.service-header {
+  color: #eb8100;
+  font-size: 30px;
+}
+.service-title {
+  color: #46166B;
+  font-size: 20px;
+  line-height: 1.3;
+}
+.price {
+  color: #f08;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.3;
+  padding-top: 5px;
+}
+.services-btn {
+  color: rgba(70, 22, 107, 1);
+  margin-top: 15px;
+  padding: 15px 40px;
+  background-color: rgba(210, 190, 245, 0.4);
+  border: 1px solid rgba(70, 22, 107, .5);
+}
+
+#footer {
+  color: black;
+  margin: 0;
+  line-height: 1.4;
+  background-image: url(../images/purple-bokeh.jpg);
+
+}
+  .salon-info {
+    background-color: lightgray;
+    color: black;
+    font-family: 'Oxygen';
+    font-size: 14px;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    line-height: 1.4;
+    padding: 50px 0;
+  }
+    .luxury-statement {
+      color: #eb8100;
+      font-family: 'Marck+Script', cursive;
+      font-size: 34px;
+      padding-bottom: 10px;
+    }
+    span {
+
+      padding: 0 10px;
+      border-left: 1px solid lightgray;
+      border-right: 1px solid lightgray;
+    }
+    .footer-info {
+      color: lightgray;
+      padding: 5px 0;
+    }
+      .phone {
+        color: #009460;
+        font-size: 28px;
+        font-family: 'Oxygen';
+      }
+      .call-now {
+        color: lightpink;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: 'Oxygen';
+      }
+    .social-media {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 20%;
+      background-color: rgba(210, 190, 245, 0.4);
+    }
+      .media-pics {
+        height: 50px;
+        width: auto;
+      }
+
+#join-email {
+  /*background-image: url(../images/purple-bokeh.jpg);*/
+  background-size: cover;
+  padding: 50px 0;
+  text-align: center;
+}
+  .names {
+    display: flex;
+    justify-content: center;
+  }
+  .name {
+    width: 100%;
+    background-color: rgba(250,250,250,0.4);
+    height: 50px;
+    color: rgba(10,10,10,0.8);
+    margin: 0 40px;
+    font-size: 20px;
+    padding-left: 15px;
+  }
+    .first-name {
+      margin-left: 15%;
+    }
+    .last-name {
+      margin-right: 15%;
+    }
+  .email-box {
+    width: 68.5%;
+    background-color: rgba(250,250,250,0.4);
+    height: 50px;
+    color: rgba(10,10,10,0.8);
+    margin: 30px 15%;
+    font-size: 20px;
+    padding-left: 15px;
+  }
+  .submit-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15%;
+  }
+  .submit-btn {
+    margin: 0;
+    width: 20%;
+    background-color: rgba(210, 190, 245, 0.85);
+    height: 60px;
+    color: rgba(10,10,10,0.8);
+    font-size: 20px;
+    padding-left: 15px;
+  }
