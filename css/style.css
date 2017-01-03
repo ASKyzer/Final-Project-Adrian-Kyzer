@@ -1,0 +1,300 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*body html {
+  color: white;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}*/
+#mainNav {
+  padding: 0 15px;
+}
+.nav-btn {
+  background-color: #46166B;
+}
+.glyphicon {
+  color: white;
+}
+.nav-links {
+  font-family: 'Monserrat', helvetica, sans-serif;
+  text-transform: uppercase;
+  font-kerning: 3px;
+}
+
+#top-logo {
+  color: #46166B;
+  font-family: "Great Vibes", cursive;
+  font-size: 36px;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Monserrat', helvetica, sans-serif;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+#sh-logo-container {
+    height: 600px;
+    width: 100%;
+    background-image: url(../images/spa-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+  }
+
+  .book-online {
+    border: 1px solid white;
+    padding: 20px 50px;
+    margin-top: 50px;
+  }
+    #sh-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    #sh-logo-contents {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-items: center;
+
+    }
+      .logo-image {
+        width: 100%;
+      }
+      .since {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+
+      }
+      .book-now {
+
+      }
+
+#welcome-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 30px 45px;
+}
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+    .welcome {
+      text-align: center;
+      font-family: 'Montserrat';
+      font-size: 2em;
+      color: #46166B;
+      padding-bottom: 10px;
+    }
+    .sh-description {
+      text-align: center;
+      font-style: italic;
+    }
+
+  #services-and-staff {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+    .services-offered {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+  #boutique-and-bridal {
+
+  }
+    .boutique {
+      /*height: 100%;*/
+    }
+    .sh-middle {
+      /*height: 100%;*/
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin: 10% 0;
+    }
+    .book-online-2 {
+      color: #46166B;
+      border: 1px solid gray;
+      padding: 20px 50px;
+      margin-top: 50px;
+      text-transform: uppercase;
+      font-size: 24px;
+    }
+
+#contact-and-social {
+  width: 100%;
+  height: 250px;
+  background-color: lightgray;
+}
+  .contact {
+    height: 100%;
+    background-image: url(../images/oldtown.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #46166B;
+    font-size: 4em;
+  }
+  .social-media {
+    height: 100%;
+  }
+
+.social-img {
+  width: 30px;
+  height: auto;
+}
+
+#staff-work {
+  margin: 0;
+  padding: 0;
+}
+
+.our-work {
+  text-align: center;
+  padding: 30% 0;
+  font-size: 28px;
+  color: #46166B;
+  font-family: 'Montserrat';
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #7a42ae;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  /*text-shadow: 1px 1px 5px #46166B;*/
+  position: relative;
+  font-size: 37px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
+}
+
+.hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+.hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  padding-top: 2em;
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+footer {
+  color: lightgray;
+  font-family: 'Raleway', Helvetica, arial, sans-serif;
+  padding: 10px 30px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
