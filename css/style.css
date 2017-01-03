@@ -86,7 +86,8 @@ main {
 
     }
       .logo-image {
-        width: 100%;
+        width: auto;
+        height: 100%;
       }
       .since {
         color: white;
@@ -156,6 +157,7 @@ main {
     }
     .book-online-2 {
       color: #46166B;
+      background-color: #bc93cc;
       border: 1px solid gray;
       padding: 20px 50px;
       margin-top: 50px;
@@ -179,10 +181,6 @@ main {
 
 .social-media {
   padding: 0;
-}
-.bokeh-img {
-  height: auto;
-  width: 100%;
 }
 
 .social-img {
@@ -554,6 +552,125 @@ footer {
   opacity: 1;
   filter: alpha(opacity=100);
 }
+
+/* styling for Services Page*/
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.hair-bg {
+width: 100%;
+height: 550px;
+margin-top: 50px;
+background-image: url(../images/Yellow-Glove-Lady.jpg);
+background-size: cover;
+background-position: bottom;
+/*background-attachment: fixed;*/
+display: flex;
+align-content: center;
+align-items: center;
+justify-content: center;
+}
+  h1.hair-services {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 44px;
+    text-align: center;
+  }
+.hair-menu{
+  margin: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+td {
+  padding: 10px 50px;
+  font-family: 'Raleway';
+  font-size: 16px;
+  color: #46166B;
+}
+
+.nails-bg {
+  width: 100%;
+  height: 425px;
+  background-image: url(../images/nails-cover.jpg);
+  background-size: cover;
+  /*background-attachment: fixed;*/
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+  h1.services {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 44px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+.makeup-bg {
+width: 100%;
+height: 550px;
+background-image: url(../images/makeup01.jpg);
+background-size: cover;
+background-position: center;;
+/*background-attachment: fixed;*/
+display: flex;
+align-content: center;
+align-items: center;
+justify-content: center;
+}
+  h1.makeup-services {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 44px;
+    text-align: center;
+  }
+
+  .facial-bg {
+  width: 100%;
+  height: 550px;
+  background-image: url(../images/facial02.jpg);
+  background-size: cover;
+  background-position: center;;
+  /*background-attachment: fixed;*/
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  }
+    h1.facial-services {
+      color: white;
+      font-family: 'Montserrat';
+      font-size: 44px;
+      text-align: center;
+    }
+
+    .body-bg {
+    width: 100%;
+    height: 550px;
+    background-image: url(../images/massage.jpg);
+    background-size: cover;
+    background-position: center;;
+    /*background-attachment: fixed;*/
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    }
+      h1.body-services {
+        color: white;
+        font-family: 'Montserrat';
+        font-size: 44px;
+        text-align: center;
+      }
+
+
 /* changed margin for email-phone, purple-logo-container and media-container to respond to mobile screen size*/
 @media (min-width: 480px) {
   .email-phone {
@@ -565,5 +682,23 @@ footer {
   .media-icons {
     text-align: center;
     margin: 5% 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hair-bg {
+    height: 330px;
+  }
+  .nails-bg {
+    height: 330px;
+  }
+}
+
+@media (max-width: 440px) {
+  .hair-bg {
+    height: 280px;
+  }
+  .nails-bg {
+    height: 280px;
   }
 }
