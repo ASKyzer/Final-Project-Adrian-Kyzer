@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Sugar House Day Spa & Salon</title>
     <meta charset="utf-8">
@@ -8,17 +9,17 @@
     <!-- fonts from googlefonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Raleway:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat" rel="stylesheet">
+    <!-- font-awesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
     <!--css file with different styling, widgets-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/normalize.css" media="screen" title="no title">
     <link rel="stylesheet" href="./css/reset.css">
   	<link rel="stylesheet" href="./css/style.css">
-
 </head>
+
 <body>
+  <!-- navigation bar bootstrap nav-default -->
   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -53,380 +54,136 @@
       </div>
       <!-- /.container-fluid -->
   </nav>
+  <!-- end of navigation bar -->
 
+  <!-- hair services container -->
   <div class="container hair">
     <div class="hair-bg">
       <h1 class="services">Hair Services</h1>
     </div>
-    <div class="hair-menu">
-      <table>
-        <tr>
-          <td>Haircuts</td>
-          <td>42 +</td>
-        </tr>
-        <tr>
-          <td>Blow Dry</td>
-          <td>42 +</td>
-        </tr>
-        <tr>
-          <td>Perm</td>
-          <td>102 +</td>
-        </tr>
-        <tr>
-          <td>T-Section Color</td>
-          <td>37 +</td>
-        </tr>
-        <tr>
-          <td>Root Color</td>
-          <td>67 +</td>
-        </tr>
-        <tr>
-          <td>All Over Color</td>
-          <td>92 +</td>
-        </tr>
-        <tr>
-          <td>Glaze</td>
-          <td>52 +</td>
-        </tr>
-        <tr>
-          <td>Updo</td>
-          <td>100 +</td>
-        </tr>
-        <tr>
-          <td>Partial Balayage</td>
-          <td>152 +</td>
-        </tr>
-        <tr>
-          <td>Full Balayage</td>
-          <td>202 +</td>
-        </tr>
-        <tr>
-          <td>Full Foil Highlights</td>
-          <td>122 +</td>
-        </tr>
-        <tr>
-          <td>Partial Foil Highlights</td>
-          <td>102 +</td>
-        </tr>
-        <tr>
-          <td>Accent Foil Highlights</td>
-          <td>72 +</td>
-        </tr>
-        <tr>
-          <td>Deep Conditioning Treatment</td>
-          <td>27 +</td>
-        </tr>
-        <tr>
-          <td>Hair Extensions</td>
-          <td>Upon Consultation</td>
-        </tr>
-        <tr>
-          <td>Yuko Japanese Relaxer</td>
-          <td>Upon Consultation</td>
-        </tr>
+    <div class="menu">
+      <table class="table table-striped">
+        <thead>
+          <th>Services</th>
+          <th>Price</th>
+        </thead>
+        <tbody>
+          <tr class="hair-service-list">
+            <td class="hair-list-items"></td>
+            <td class="hair-prices"></td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
-
+  <!-- end of hair container -->
+  <!-- nails services container -->
   <div class="container nails">
     <div class="nails-bg">
       <h1 class="services">Nails Services</h1>
     </div>
-    <div class="hair-menu">
-      <table>
-        <tr>
-          <td>Haircuts</td>
-          <td>42 +</td>
-        </tr>
-        <tr>
-          <td>Blow Dry</td>
-          <td>42 +</td>
-        </tr>
-        <tr>
-          <td>Perm</td>
-          <td>102 +</td>
-        </tr>
-        <tr>
-          <td>T-Section Color</td>
-          <td>37 +</td>
-        </tr>
-        <tr>
-          <td>Root Color</td>
-          <td>67 +</td>
-        </tr>
-        <tr>
-          <td>All Over Color</td>
-          <td>92 +</td>
-        </tr>
-        <tr>
-          <td>Glaze</td>
-          <td>52 +</td>
-        </tr>
-        <tr>
-          <td>Updo</td>
-          <td>100 +</td>
-        </tr>
-        <tr>
-          <td>Partial Balayage</td>
-          <td>152 +</td>
-        </tr>
-        <tr>
-          <td>Full Balayage</td>
-          <td>202 +</td>
-        </tr>
-        <tr>
-          <td>Full Foil Highlights</td>
-          <td>122 +</td>
-        </tr>
-        <tr>
-          <td>Partial Foil Highlights</td>
-          <td>102 +</td>
-        </tr>
-        <tr>
-          <td>Accent Foil Highlights</td>
-          <td>72 +</td>
-        </tr>
-        <tr>
-          <td>Deep Conditioning Treatment</td>
-          <td>27 +</td>
-        </tr>
-        <tr>
-          <td>Hair Extensions</td>
-          <td>Upon Consultation</td>
-        </tr>
-        <tr>
-          <td>Yuko Japanese Relaxer</td>
-          <td>Upon Consultation</td>
-        </tr>
+    <div class="menu">
+      <table class="table table-striped">
+        <thead>
+          <th>Services</th>
+          <th>Price</th>
+        </thead>
+        <tbody>
+          <tr class="nails-service-list">
+            <td class="nails-list-items"></td>
+            <td class="nails-prices"></td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
-
+  <!-- end of nails container -->
+  <!-- makeup services container -->
   <div class="container makeup">
     <div class="makeup-bg">
       <h1 class="services">Make-Up Services</h1>
     </div>
-    <div class="hair-menu">
-      <table>
-        <tr>
-          <td>Haircuts</td>
-          <td>42 +</td>
-        </tr>
-        <tr>
-          <td>Blow Dry</td>
-          <td>42 +</td>
-        </tr>
-        <tr>
-          <td>Perm</td>
-          <td>102 +</td>
-        </tr>
-        <tr>
-          <td>T-Section Color</td>
-          <td>37 +</td>
-        </tr>
-        <tr>
-          <td>Root Color</td>
-          <td>67 +</td>
-        </tr>
-        <tr>
-          <td>All Over Color</td>
-          <td>92 +</td>
-        </tr>
-        <tr>
-          <td>Glaze</td>
-          <td>52 +</td>
-        </tr>
-        <tr>
-          <td>Updo</td>
-          <td>100 +</td>
-        </tr>
-        <tr>
-          <td>Partial Balayage</td>
-          <td>152 +</td>
-        </tr>
-        <tr>
-          <td>Full Balayage</td>
-          <td>202 +</td>
-        </tr>
-        <tr>
-          <td>Full Foil Highlights</td>
-          <td>122 +</td>
-        </tr>
-        <tr>
-          <td>Partial Foil Highlights</td>
-          <td>102 +</td>
-        </tr>
-        <tr>
-          <td>Accent Foil Highlights</td>
-          <td>72 +</td>
-        </tr>
-        <tr>
-          <td>Deep Conditioning Treatment</td>
-          <td>27 +</td>
-        </tr>
-        <tr>
-          <td>Hair Extensions</td>
-          <td>Upon Consultation</td>
-        </tr>
-        <tr>
-          <td>Yuko Japanese Relaxer</td>
-          <td>Upon Consultation</td>
-        </tr>
+    <div class="menu">
+      <table class="table table-striped">
+        <thead>
+          <th>Services</th>
+          <th>Price</th>
+        </thead>
+        <tbody>
+          <tr class="makeup-service-list">
+            <td class="makeup-list-items"></td>
+            <td class="makeup-prices"></td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
-
+  <!-- end of makeup container -->
+  <!-- facial and skin care services container -->
   <div class="container facial">
     <div class="facial-bg">
       <h1 class="services">Skin Care & Waxing</h1>
     </div>
-    <div class="hair-menu">
-      <table>
-        <tr>
-          <td>Haircuts</td>
-          <td>42 +</td>
-        </tr>
-        <tr>
-          <td>Blow Dry</td>
-          <td>42 +</td>
-        </tr>
-        <tr>
-          <td>Perm</td>
-          <td>102 +</td>
-        </tr>
-        <tr>
-          <td>T-Section Color</td>
-          <td>37 +</td>
-        </tr>
-        <tr>
-          <td>Root Color</td>
-          <td>67 +</td>
-        </tr>
-        <tr>
-          <td>All Over Color</td>
-          <td>92 +</td>
-        </tr>
-        <tr>
-          <td>Glaze</td>
-          <td>52 +</td>
-        </tr>
-        <tr>
-          <td>Updo</td>
-          <td>100 +</td>
-        </tr>
-        <tr>
-          <td>Partial Balayage</td>
-          <td>152 +</td>
-        </tr>
-        <tr>
-          <td>Full Balayage</td>
-          <td>202 +</td>
-        </tr>
-        <tr>
-          <td>Full Foil Highlights</td>
-          <td>122 +</td>
-        </tr>
-        <tr>
-          <td>Partial Foil Highlights</td>
-          <td>102 +</td>
-        </tr>
-        <tr>
-          <td>Accent Foil Highlights</td>
-          <td>72 +</td>
-        </tr>
-        <tr>
-          <td>Deep Conditioning Treatment</td>
-          <td>27 +</td>
-        </tr>
-        <tr>
-          <td>Hair Extensions</td>
-          <td>Upon Consultation</td>
-        </tr>
-        <tr>
-          <td>Yuko Japanese Relaxer</td>
-          <td>Upon Consultation</td>
-        </tr>
+    <div class="menu">
+      <table class="table table-striped">
+        <thead>
+          <th>Services</th>
+          <th>Price</th>
+        </thead>
+        <tbody>
+          <tr class="facial-service-list">
+            <td class="facial-list-items"></td>
+            <td class="facial-prices"></td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
-
+  <!-- end of facial and skin care container -->
+  <!-- body (massages and body treatments) services container -->
   <div class="container body">
     <div class="body-bg">
       <h1 class="services">Massage & Body Treatments</h1>
     </div>
-    <div class="hair-menu">
-      <table>
-        <tr>
-          <td>Haircuts</td>
-          <td>42 +</td>
-        </tr>
-        <tr>
-          <td>Blow Dry</td>
-          <td>42 +</td>
-        </tr>
-        <tr>
-          <td>Perm</td>
-          <td>102 +</td>
-        </tr>
-        <tr>
-          <td>T-Section Color</td>
-          <td>37 +</td>
-        </tr>
-        <tr>
-          <td>Root Color</td>
-          <td>67 +</td>
-        </tr>
-        <tr>
-          <td>All Over Color</td>
-          <td>92 +</td>
-        </tr>
-        <tr>
-          <td>Glaze</td>
-          <td>52 +</td>
-        </tr>
-        <tr>
-          <td>Updo</td>
-          <td>100 +</td>
-        </tr>
-        <tr>
-          <td>Partial Balayage</td>
-          <td>152 +</td>
-        </tr>
-        <tr>
-          <td>Full Balayage</td>
-          <td>202 +</td>
-        </tr>
-        <tr>
-          <td>Full Foil Highlights</td>
-          <td>122 +</td>
-        </tr>
-        <tr>
-          <td>Partial Foil Highlights</td>
-          <td>102 +</td>
-        </tr>
-        <tr>
-          <td>Accent Foil Highlights</td>
-          <td>72 +</td>
-        </tr>
-        <tr>
-          <td>Deep Conditioning Treatment</td>
-          <td>27 +</td>
-        </tr>
-        <tr>
-          <td>Hair Extensions</td>
-          <td>Upon Consultation</td>
-        </tr>
-        <tr>
-          <td>Yuko Japanese Relaxer</td>
-          <td>Upon Consultation</td>
-        </tr>
+    <div class="menu">
+      <table class="table table-striped">
+        <thead>
+          <th>Services</th>
+          <th>Price</th>
+        </thead>
+        <tbody>
+          <tr class="body-service-list">
+            <td class="body-list-items"></td>
+            <td class="body-prices"></td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
+  <!-- end of body treatment container -->
+  <!-- medical spa and spa packages services container -->
+  <div class="container medi-spa">
+    <div class="medi-spa-bg">
+      <h1 class="services">Medi-Spa & Spa Packages</h1>
+    </div>
+    <div class="menu">
+      <table class="table table-striped">
+        <thead>
+          <th>Services</th>
+          <th>Price</th>
+        </thead>
+        <tbody>
+          <tr class="medi-spa-service-list">
+            <td class="medi-spa-list-items"></td>
+            <td class="medi-spa-prices"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- medi-spa container collapse-->
 
-
-
-
+  <!-- contact info footer and email signup -->
   <div class="contact-fluid">
     <div class="row">
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 services-offered email-phone">
@@ -451,13 +208,14 @@
       </div>
     </div>
   </div>
-  </main>
+  <!-- contact info footer collapse-->
   <hr>
+  <!-- bottom footer bar with links to our info page -->
   <footer>
-    <p>Privacy Policy</p>
-    <p>Spa Etiquette</p>
-    <p>New Client Offer</p>
-    <p>Job Opportunities</p>
+    <a href="http://sugarhousedayspa.com/info">Privacy Policy</a>
+    <a href="http://sugarhousedayspa.com/info">Spa Etiquette</a>
+    <a href="http://sugarhousedayspa.com/info">New Client Offer</a>
+    <a href="http://sugarhousedayspa.com/info">Job Opportunities</a>
   </footer>
 
     <!--standard jquery library-->
@@ -466,5 +224,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!--  my js file -->
     <script src="./js/main.js"></script>
+
 </body>
+
 </html>
