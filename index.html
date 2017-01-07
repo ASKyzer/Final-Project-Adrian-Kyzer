@@ -19,42 +19,35 @@
 </head>
 
 <body>
-  <!-- navigation bar bootstrap nav-default -->
-  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed nav-btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
-              </button>
-              <a class="navbar-brand" id="top-logo" href="#page-top">Sugar House</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                  <li>
-                      <a class="nav-links" href="#about">About</a>
-                  </li>
-                  <li>
-                      <a class="nav-links" href="#services">Services</a>
-                  </li>
-                  <li>
-                      <a class="nav-links" href="#contact">Gallery</a>
-                  </li>
-                  <li>
-                      <a class="nav-links" href="#contact">Boutique</a>
-                  </li>
-                  <li>
-                      <a class="nav-links" href="#contact">Contact</a>
-                  </li>
-              </ul>
-          </div>
-          <!-- /.navbar-collapse -->
+  <!-- top navbar with toggle Hamburger menu fixed -->
+  <section class="navigation fixed-navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <a class="navbar-brand" id="top-logo" href="#page-top">Sugar House</a>
       </div>
-      <!-- /.container-fluid -->
-  </nav>
-  <!-- end of navigation bar -->
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="#!">Home</a>
+          </li>
+          <li>
+            <a href="#!">Services</a>
+          </li>
+          <li>
+            <a href="#!">Gallery</a>
+          </li>
+          <li>
+            <a href="#!">Boutique</a>
+          </li>
+          <li>
+            <a href="#!">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <!-- navbar collapse -->
 
   <main>
     <div class="container" id="sh-logo-container">
@@ -188,8 +181,8 @@
     <!-- #staff-work container-->
     <div class="container-fluid" id="staff-work">
       <div class="row staffs-work">
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 services-offered our-work-container">
-          <h1 class="our-work">VIEW OUR GALLERY</h1>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 services-offered our-work-container">
+          <h1 class="our-work"><a href="http://sugarhousedayspa.com/gallery">See the creations from our talented stylists</a></h1>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 services-offered">
           <div class="hovereffect">
@@ -303,7 +296,7 @@
       </div>
     </div>
   </main>
-  <hr>
+
   <footer>
     <a href="http://sugarhousedayspa.com/info">Privacy Policy</a>
     <a href="http://sugarhousedayspa.com/info">Spa Etiquette</a>

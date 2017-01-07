@@ -16,64 +16,159 @@
     <link rel="stylesheet" href="./css/normalize.css" media="screen" title="no title">
     <link rel="stylesheet" href="./css/reset.css">
   	<link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/pure-css-select-style.css">
+
 </head>
 
 <body>
-  <!-- navigation bar bootstrap nav-default -->
-  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed nav-btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
-              </button>
-              <a class="navbar-brand" id="top-logo" href="#page-top">Sugar House</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                  <li>
-                      <a class="nav-links" href="#about">About</a>
-                  </li>
-                  <li>
-                      <a class="nav-links" href="#services">Services</a>
-                  </li>
-                  <li>
-                      <a class="nav-links" href="#contact">Gallery</a>
-                  </li>
-                  <li>
-                      <a class="nav-links" href="#contact">Boutique</a>
-                  </li>
-                  <li>
-                      <a class="nav-links" href="#contact">Contact</a>
-                  </li>
-              </ul>
-          </div>
-          <!-- /.navbar-collapse -->
+  <!-- top navbar with toggle Hamburger menu fixed -->
+  <section class="navigation fixed-navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <a class="navbar-brand" id="top-logo" href="#page-top">Sugar House</a>
       </div>
-      <!-- /.container-fluid -->
-  </nav>
-  <!-- end of navigation bar -->
-
-  <div class="container gallery-header">
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="#!">Home</a>
+          </li>
+          <li>
+            <a href="#!">Services</a>
+          </li>
+          <li>
+            <a href="#!">Gallery</a>
+          </li>
+          <li>
+            <a href="#!">Boutique</a>
+          </li>
+          <li>
+            <a href="#!">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <!-- navbar collapse -->
+  <!-- .gallery-header -->
+  <div class="container-fluid gallery-header">
     <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <select class="selectpicker" multiple title="Choose a particular stylist...">
-          <option>Adrian</option>
-          <option>Danielle</option>
-          <option>Betty</option>
-          <option>Danita</option>
-          <option>Nigisti</option>
-          <option>Jessica</option>
-          <option>Chelsea</option>
-          <option>Grace</option>
-          <option>Tatjana</option>
-        </select>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 gallery-header-col">
+        <img src="./images/people.jpg" alt="" class="img-responsive"/>
+      </div>
+    </div>
+  </div>
+  <!-- .gallery-header collapse -->
+  <!-- #select-stylist : stylist sector container -->
+  <div class="container-fluid" id="select-stylist">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 select-col">
+          <div class="pure-css-select-style theme-square stylist-sel">
+            <select>
+              <option value="">Please Select a Stylist to See Their Work</option>
+              <option value="">Adrian</option>
+              <option value="">Betty</option>
+              <option value="">Katie-Rose</option>
+              <option value="">Meghan</option>
+              <option value="">Danita</option>
+              <option value="">Danielle</option>
+              <option value="">Jessica</option>
+              <option value="">Tatjana</option>
+              <option value="">Nigisti</option>
+              <option value="">Chelsea</option>
+              <option value="">Nadia</option>
+              <option value="">Eleni</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- #select-stylist collapse -->
+  <!-- #gallery-images container -->
+  <div class="container-fluid" id="gallery-images">
+    <div class="row first-row">
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+    </div>
+    <div class="row second-row">
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+    </div>
+    <div class="row third-row">
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+    </div>
+    <div class="row forth-row">
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
+        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
       </div>
     </div>
   </div>
 
+  <hr>
   <!-- contact info footer and email signup -->
   <div class="contact-fluid">
     <div class="row">
@@ -100,7 +195,6 @@
     </div>
   </div>
   <!-- contact info footer collapse-->
-  <hr>
   <!-- bottom footer bar with links to our info page -->
   <footer>
     <a href="http://sugarhousedayspa.com/info">Privacy Policy</a>
