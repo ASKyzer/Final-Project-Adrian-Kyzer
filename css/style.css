@@ -1,5 +1,6 @@
-
-
+/* Final Project:  Sugar House Website */
+/* Author:  Adrian Kyzer */
+/* 2017 */
 
 * {
   font-family: 'Montserrat', sans-serif;
@@ -8,29 +9,172 @@
   padding: 0;
 }
 
-a {
+a, a:hover {
   text-decoration: none;
-  font-weight: 300;
   font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
-a:hover {
+/* css for Navigation Bar */
+@charset "UTF-8";
+.navigation {
+  height: 70px;
+  background: #f7f4fb;
+}
+  .fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 70px;
+  }
+
+.brand {
+  position: absolute;
+  padding-top: 10px;
+  float: left;
+  line-height: 70px;
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
   text-decoration: none;
 }
 
-#mainNav {
-  padding: 0 15px;
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.nav-btn {
-  background-color: #46166B;
+
+nav {
+  float: right;
 }
-.glyphicon {
-  color: white;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.nav-links {
-  font-family: 'Monserrat', helvetica, sans-serif;
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #f7f4fb;
+  color: #b2abba;
+  text-decoration: none;
+  font-family: 'Raleway';
   text-transform: uppercase;
-  font-kerning: 3px;
+  font-size: 1.2em;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  background: #46166B;
+  color: #ffffff;
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: ' ▾';
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #46116b;
+  height: 70px;
+  width: 70px;
+}
+
+@media only screen and (max-width: 850px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 0 0;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 850px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
 }
 
 #top-logo {
@@ -40,13 +184,11 @@ a:hover {
 }
 
 main {
-  margin: 0;
-  padding: 0;
   width: 100%;
   font-family: 'Monserrat', helvetica, sans-serif;
 }
 
-.container-fluid {
+.container, .container-fluid {
   margin: 0;
   padding: 0;
 }
@@ -56,7 +198,7 @@ main {
 }
 
 #sh-logo-container {
-    height: 600px;
+    height: 550px;
     width: 100%;
     background-image: url(../images/spa-bg.jpg);
     background-size: cover;
@@ -69,6 +211,7 @@ main {
   }
 
   .book-online {
+    color: #ffffff;
     border: 1px solid white;
     padding: 20px 50px;
     margin-top: 50px;
@@ -85,7 +228,6 @@ main {
       justify-content: center;
       align-items: center;
       align-items: center;
-
     }
       .logo-image {
         width: auto;
@@ -94,10 +236,6 @@ main {
       .since {
         color: white;
         font-family: 'Montserrat', sans-serif;
-
-      }
-      .book-now {
-
       }
 
 #welcome-container {
@@ -135,34 +273,27 @@ main {
     margin: 0;
     padding: 0;
   }
-
     .services-offered {
       height: 100%;
       padding: 0;
       margin: 0;
     }
-
-  #boutique-and-bridal {
-
-  }
-    .boutique {
-      /*height: 100%;*/
-    }
     .sh-middle {
-      /*height: 100%;*/
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       align-content: center;
-      margin: 10% 0;
+      padding-top: 10% 0 5% 0;
+      margin: 15px 0 25px 0;
     }
     .book-online-2 {
+      height: auto;
       color: #46166B;
       background-color: #bc93cc;
       border: 1px solid gray;
       padding: 20px 50px;
-      margin-top: 50px;
+      margin-top: 5%;
       text-transform: uppercase;
       font-size: 24px;
     }
@@ -173,7 +304,6 @@ main {
 }
   .contact {
     height: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,12 +325,20 @@ main {
   padding: 0;
 }
 
+.staffs-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .our-work {
   text-align: center;
-  padding: 30% 0;
+  padding: 10% 5%;
   font-size: 28px;
   color: #46166B;
   font-family: 'Montserrat';
+  text-transform: uppercase;
 }
 .email-phone {
   margin: 18% 0;
@@ -257,6 +395,23 @@ main {
     border-radius: 0;
   }
 
+/* bottom footer bar with links to info page */
+footer {
+  background-color: #f7f4fb;
+    padding: 20px 40px;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  footer a {
+      color: #b2abba;
+      padding: 10px 5px;
+      font-family: 'Raleway', Helvetica, arial, sans-serif;
+    }
+  /* end of footer bar at bottom of page */
+
+
 /* main hover effect mostly for front page */
 .hovereffect {
   width: 100%;
@@ -303,7 +458,7 @@ main {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-  /*text-shadow: 1px 1px 5px #46166B;*/
+  text-shadow: 1px 1px 3px rgba(70, 22, 107, 0.7);
   position: relative;
   font-size: 37px;
   overflow: hidden;
@@ -349,23 +504,6 @@ main {
 }
 /* end of main hover effect */
 
-
-/* bottom footer bar with links to info page */
-footer {
-  padding: 10px 30px;
-  margin: 20px 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-  footer a {
-    color: lightgray;
-    padding: 0 5px;
-    font-family: 'Open Sans', Helvetica, arial, sans-serif;
-  }
-  /* end of footer bar at bottom of page */
-
-
 /* hover effect 2 for the social media next to contact us on front page */
 .hovereffect2 {
   width: 100%;
@@ -409,6 +547,7 @@ footer {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
+  text-shadow: 1px 1px 3px rgba(70, 22, 107, 0.7);
   font-size: 27px;
   padding: 10px;
   width: 100%;
@@ -567,150 +706,87 @@ footer {
 }
 /* end of hover effect 2 */
 
+/*****************************************************************************************/
 
-/* styling for Services Page*/
-.container {
+/* styling for SERVICES PAGE */
+
+.container, .container-fluid, .row, .service-col, .menu-col {
   margin: 0;
   padding: 0;
-  width: 100%;
+}
+/* blank div to height of fixed navbar so content can start below*/
+#top-of-page {
+  height: 70px;
 }
 
 /* hair services container */
-.hair-bg {
-  width: 100%;
-  height: 550px;
-  margin-top: 50px;
-  padding: 0 2%;
-  background-image: url(../images/hairstyling.jpg);
-  background-size: cover;
-  background-position: bottom;
-  /*background-attachment: fixed;*/
+
+.service-col, .menu-col {
+  margin: 0;
+  padding: 0;
+}
+/*centering menu items within the row*/
+.services-row {
   display: flex;
-  align-content: center;
   align-items: center;
-  justify-content: center;
 }
 
-  /*h1.hair-services {
-    color: white;
-    font-family: 'Montserrat';
-    font-size: 44px;
-    text-align: center;
-  }*/
-
-.menu{
-  margin: 20px 0;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
-td {
+.menu-col {
   padding: 10px 50px;
-  font-family: 'Raleway';
-  font-size: 16px;
-  color: #46166B;
 }
 
-.nails-bg {
-  width: 100%;
-  height: 425px;
-  background-image: url(../images/nails-cover.jpg);
-  background-size: cover;
-  /*background-attachment: fixed;*/
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-}
-  h1.services {
-    color: white;
-    font-family: 'Montserrat';
-    font-size: 44px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-.makeup-bg {
-width: 100%;
-height: 550px;
-padding: 0 2%;
-background-image: url(../images/makeup01.jpg);
-background-size: cover;
-background-position: center;;
-/*background-attachment: fixed;*/
-display: flex;
-align-content: center;
-align-items: center;
-justify-content: center;
-}
-  h1.makeup-services {
-    color: white;
-    font-family: 'Montserrat';
-    font-size: 44px;
-    text-align: center;
-  }
-
-  .facial-bg {
-  width: 100%;
-  height: 550px;
-  padding: 0 2%;
-  background-image: url(../images/facial02.jpg);
-  background-size: cover;
-  background-position: center;;
-  /*background-attachment: fixed;*/
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  }
-    h1.facial-services {
-      color: white;
-      font-family: 'Montserrat';
-      font-size: 44px;
-      text-align: center;
-    }
-
-    .body-bg {
-    width: 100%;
-    height: 550px;
-    background-image: url(../images/massage.jpg);
-    background-size: cover;
-    background-position: center;;
-    /*background-attachment: fixed;*/
+  .menu-items {
+    font-family: 'Raleway';
+    line-height: 1.4;
+    font: 10px;
     display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    }
-      h1.body-services {
-        color: white;
-        font-family: 'Montserrat';
-        font-size: 44px;
-        text-align: center;
-      }
+    justify-content: space-around;
+  }
 
-      .medi-spa-bg {
-      width: 100%;
-      height: 550px;
-      background-image: url(../images/medi-spa.jpg);
-      background-size: cover;
-      background-position: center;;
-      /*background-attachment: fixed;*/
-      display: flex;
-      align-content: center;
-      align-items: center;
-      justify-content: center;
-      }
-        h1.medi-spa-services {
-          color: white;
-          font-family: 'Montserrat';
-          font-size: 44px;
-          text-align: center;
-        }
+.semi-perm-items, .semi-perm-price {
+  font-size: 16px;
+  color: #f00;
+  padding: 10px 0;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.menu {
+  color: #46166B;
+  font-style: italic;
+}
 
 
+.price {
+  color: #46166B;
+  text-align: center;
+  font-style: italic;
+}
 
+#sh-booknow {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*************************************************************/
+
+/* GALLERY PAGE */
+
+/* overiding bootstrap's preset margins and padding for their container-fluid rows and cols*/
+.gallery-col, .select-col, .gallery-header-col {
+  margin: 0;
+  padding: 0;
+}
+/* making the header visible under the fixed navbar*/
+.gallery-header {
+  padding-top: 60px;
+}
+
+.select-col {
+  padding: 5% 2%;
+}
+
+/* Media Queries ------------------------------------------------------------------------------------------------*/
 /* changed margin for email-phone, purple-logo-container and media-container to respond to mobile screen size*/
 @media (min-width: 470px) {
   .email-phone {
@@ -725,12 +801,9 @@ justify-content: center;
   }
 }
 
-@media (max-width: 768px) {
-  .hair-bg {
-    height: 330px;
-  }
-  .nails-bg {
-    height: 330px;
+@media (max-width: 992px) {
+  .services-row {
+    display: block;
   }
 }
 
@@ -745,11 +818,4 @@ justify-content: center;
     text-align: center;
     margin: 3% 0;
   }
-  .hair-bg {
-    height: 280px;
-  }
-  .nails-bg {
-    height: 280px;
-  }
-
 }
