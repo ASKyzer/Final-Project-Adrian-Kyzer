@@ -11,7 +11,7 @@
 
 a, a:hover {
   text-decoration: none;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  /*font-family: 'Open Sans', Helvetica, sans-serif;*/
 }
 
 /* css for Navigation Bar */
@@ -138,6 +138,7 @@ nav ul li ul li a {
     display: block !important;
   }
 }
+
 #nav-toggle {
   position: absolute;
   left: 18px;
@@ -183,18 +184,14 @@ nav ul li ul li a {
   font-size: 36px;
 }
 
-main {
+body, main {
   width: 100%;
-  font-family: 'Monserrat', helvetica, sans-serif;
+  font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
 }
 
 .container, .container-fluid {
   margin: 0;
   padding: 0;
-}
-
-.row {
-  margin: 0;
 }
 
 #sh-logo-container {
@@ -206,7 +203,7 @@ main {
     display: flex;
     align-content: center;
     justify-content: center;
-    font-family: 'Montserrat';
+    font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
     text-transform: uppercase;
   }
 
@@ -215,6 +212,8 @@ main {
     border: 1px solid white;
     padding: 20px 50px;
     margin-top: 50px;
+    font-size: 24px;
+    font-weight: 400;
   }
     #sh-logo {
       display: flex;
@@ -235,7 +234,7 @@ main {
       }
       .since {
         color: white;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
       }
 
 #welcome-container {
@@ -298,18 +297,18 @@ main {
       font-size: 24px;
     }
 
-#contact-and-social {
+.social-special-container {
   width: 100%;
   height: auto;
 }
-  .contact {
+.contact {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #46166B;
     font-size: 4em;
-  }
+}
 
 .social-media {
   padding: 0;
@@ -318,6 +317,7 @@ main {
 .social-img {
   width: 30px;
   height: auto;
+  padding: 0 3px;
 }
 
 #staff-work {
@@ -325,7 +325,7 @@ main {
   padding: 0;
 }
 
-.staffs-work {
+.staffs-work-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,29 +335,43 @@ main {
 .our-work {
   text-align: center;
   padding: 10% 5%;
+}
+.our-work a {
   font-size: 28px;
-  color: #46166B;
-  font-family: 'Montserrat';
+  color: #71277B;
+  font-family: 'Montserrat', 'Open Sans', helvetica, sans-serif;
   text-transform: uppercase;
 }
+
+
+.social-and-special-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
 .email-phone {
-  margin: 18% 0;
-  color: gray;
-  font-family: 'Montserrat';
+  padding: 10px;
+  margin-top: 5px;
+  color: #71277A;
+  font-family: 'Montserrat', 'Open Sans', helvetica, sans-serif;
 }
 .email-phone p {
   text-align: center;
   padding: 2px 0;
 }
   .email-phone p:nth-child(3) {
-    margin-top: 10%;
+    margin-top: 30px;
   }
 
 .purple-logo-container {
   text-align: center;
-  margin: 20% 0;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 .purple-logo {
   width: 100%;
@@ -365,20 +379,20 @@ main {
 }
 
 .media-icons {
+  padding: 40px;
   text-align: center;
-  margin: 45% 0;
-  color: gray;
+  color: #71277A;
   font-family: 'Montserrat';
 }
 .media-icons p,a,input {
   padding: 10px 0;
 }
   .media-icons p:nth-child(6) {
-    margin-top: 10%;
+    margin-top: 20px;
   }
   input.underline {
     font-size: 10px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
     letter-spacing: 2px;
@@ -386,8 +400,8 @@ main {
     border: none;
     min-width: 170px;
     display: block;
-    margin: 5px auto;
-    padding: 5px;
+    margin: auto;
+    padding: 0;
     overflow: visible;
     border-bottom: 1px solid #bbb;
     background-color: transparent;
@@ -722,8 +736,7 @@ footer {
 /* hair services container */
 
 .service-col, .menu-col {
-  margin: 0;
-  padding: 0;
+
 }
 /*centering menu items within the row*/
 .services-row {
@@ -732,11 +745,11 @@ footer {
 }
 
 .menu-col {
-  padding: 10px 50px;
+  padding: 20px 50px;
 }
 
   .menu-items {
-    font-family: 'Raleway';
+    font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
     line-height: 1.4;
     font: 10px;
     display: flex;
@@ -752,8 +765,8 @@ footer {
 }
 
 .menu {
-  color: #46166B;
-  font-style: italic;
+  color: #71277A;
+  font-weight: 600;
 }
 
 
@@ -763,10 +776,52 @@ footer {
   font-style: italic;
 }
 
-#sh-booknow {
-  display: flex;
-  justify-content: space-around;
+.gerrish {
+  font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
+  padding: 10px 0 30px 0;
 }
+  .gerrish span {
+    color: #71277A;
+    font-weight: 600;
+  }
+  span.medi-offer {
+    color: #F00;
+  }
+
+p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
+  font-size: 16px;
+  color: #f00;
+  padding: 10px 0;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.sh-booknow {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 0;
+  background-color: #46166B;
+}
+  .book-online-3 {
+    width: 100%;
+    color: white;
+    background-color: #bc93cc;
+    border: 1px solid white;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  .sh-bottom-book {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;*/
+  }
 
 /*************************************************************/
 
@@ -781,41 +836,136 @@ footer {
 .gallery-header {
   padding-top: 60px;
 }
-
+#gallery-images {
+  margin-bottom: 40px;
+}
+.gallery-img {
+  width: 100%;
+}
 .select-col {
   padding: 5% 2%;
 }
 
 /* Media Queries ------------------------------------------------------------------------------------------------*/
 /* changed margin for email-phone, purple-logo-container and media-container to respond to mobile screen size*/
-@media (min-width: 470px) {
-  .email-phone {
-    margin: 3% 0;
-  }
-  .purple-logo-container {
-    margin: 3% 0;
-  }
-  .media-icons {
-    text-align: center;
-    margin: 3% 0;
-  }
-}
-
 @media (max-width: 992px) {
   .services-row {
     display: block;
   }
+  .purple-logo-container {
+    order: -1;
+  }
 }
-
-@media (max-width: 440px) {
+@media (min-width: 0px) and (max-width: 600px) {
+  .menu-col {
+    font-size: 12px;
+    padding: 15px 10px;
+    align-content: space-between;
+  }
+  .sh-bottom-book {
+    display: flex;
+    padding: 15px 0;
+  }
+  .sh-booknow {
+    padding: 40px 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+  }
+  .four-col-row .overlay h2 {
+    padding: 0;
+  }
+  .four-col-row .overlay p {
+    padding-top: 10px;
+  }
+}
+@media (min-width: 375px) and (max-width: 992px) {
   .email-phone {
-    margin: 3% 0;
+    font-size: 12px;
+    padding-left:10px;
+    padding-right: 3px;
+  }
+  .email-phone p:nth-child(1) {
+    padding-top: 15px;
+  }
+  .email-phone p:nth-child(3) {
+    padding-top: 35px;
+    margin-top: 0;
   }
   .purple-logo-container {
-    margin: 3% 0;
+    padding: 40px 0 0 0;
   }
   .media-icons {
     text-align: center;
-    margin: 3% 0;
+    padding: 0;
+  }
+  .media-icons p {
+    font-size: 12px;
+    padding-bottom: 3px;
+  }
+  .social-img {
+    width: 25px;
+    height: auto;
+    padding: 0 2px;
+  }
+  input.underline {
+    font-size: 12px;
+    font-size: .7rem;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 1.8px;
+    text-align: center;
+    border: none;
+    min-width: 100px;
+  }
+
+}
+
+@media (min-width: 0px) and (max-width: 374px){
+  .container, .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
+  .email-phone {
+    font-size: 10px;
+    padding-left:10px;
+    padding-right: 3px;
+  }
+  .email-phone p:nth-child(1) {
+    padding-top: 35px;
+  }
+  .email-phone p:nth-child(3) {
+    padding-top: 20px;
+    margin-top: 0;
+  }
+  .purple-logo-container {
+    padding: 40px 0 0 0;
+  }
+  .media-container {
+    padding-right: 0;
+  }
+  .media-icons {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    font-size: 10px;
+  }
+  .media-icons p {
+    font-size: 10px;
+  }
+  .social-img {
+    width: 20px;
+    height: auto;
+    padding: 0 1px;
+  }
+  input.underline {
+    font-size: 10px;
+    font-size: .6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+    text-align: left;
+    min-width: 50px;
   }
 }
