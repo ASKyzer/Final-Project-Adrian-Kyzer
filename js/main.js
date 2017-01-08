@@ -35,7 +35,7 @@ $(document).ready(function(){
 
 // arrays and for loops for hair menu
 var hairMenu = ["Haircuts", "Blow-dry", "Perm", "T-Section Colour", "Root-Colour", "All Over Colour", "Glaze", "Updo", "Partial Balayage", "Full Balayage", "Full Foil Highlights", "Partial Foil Highlights", "Accent Highlights", "Deep Conditioning Treatment", "Hair Extensions", "Yuko Japanese Relaxer"];
-var hairPrice = ["42+", "42+", "102+", "37+", "67+", "92+", "52+", "102+", "152+", "202+", "122+", "102+", "72+", "27+", "Upon Consultaion", "Upon Consultation"];
+var hairPrice = ["$42 & up", "$42 & up", "$102 & up", "$37 & up", "$67 & up", "$92 & up", "$52 & up", "$102 & up", "$152 & up", "$202 & up", "$122 & up", "$102 & up", "$72 & up", "$27 & up", "Upon Consultaion", "Upon Consultation"];
 
 for (var h = 0; h < hairMenu.length; h++) {
   $('#hair-menu-list').append('<li class="hair-list-items">' + hairMenu[h] + '</li>');
@@ -45,7 +45,7 @@ for (var h = 0; h < hairMenu.length; h++) {
 
 // arrays and for loops for nails menu
 var nailsMenu = ["Manicure", "French Manicure", "Pedicure", "French Pedicure", "Pedicure with Reflexology", "Sugar House Manicure", "Sugar House Pedicure", "Healing Pedicure", "Sports Manicure", "Buff and Polish", "Acrylic Full Set", "Acrylic Fills", "Shellac Manicure", "Gel Overlay Fullset", "Gel Overlay Fill", "Nail Art"];
-var nailsPrice = ["32", "37", "47", "52", "77", "42", "57", "62", "27", "22", "72", "47", "47", "72", "47", "7 & up"];
+var nailsPrice = ["$32", "$37", "$47", "$52", "$77", "$42", "$57", "$62", "$27", "$22", "$72", "$47", "$47", "$72", "$47", "$7 & up"];
 
 for (var n = 0; n < nailsMenu.length; n++) {
   $('#nails-menu-list').append('<li class="nails-list-items">' + nailsMenu[n] + '</li>');
@@ -56,8 +56,8 @@ for (var n = 0; n < nailsMenu.length; n++) {
 // arrays and for loops for makeup services
 var makeupMenu = ["Application", "Lesson", "Bridal Makeup", "Lavish Lash Extension", "Air Brush Makeup"];
 var semiPermMenu = ["Lip Liner", "Full Lips", "Eyebrow", "Eyeliner Upper", "Eyeliner Lower"];
-var makeupPrice = ["52", "67", "102", "72 & up", "127"];
-var semiPermPrice = ["400", "600", "400", "250", "200"];
+var makeupPrice = ["$52", "$67", "$102", "$72 & up", "$127"];
+var semiPermPrice = ["$400", "$600", "$400", "$250", "$200"];
 
 for ( var m = 0; m < makeupMenu.length; m++) {
   $('.semi-perm-items').before('<li class="makeup=list-items">' + makeupMenu[m] + '</li>');
@@ -69,8 +69,8 @@ for ( var m = 0; m < makeupMenu.length; m++) {
 // end of makeup services entry
 
 // arrays and for loops for skin care and facial services
-var skinMenu = ["European Deep Cleansing Facial", "Organic Facial", "Organic Anti-Aging Facial", "Glycolic Facial", "Vitamin C Facial", " Oxygenating Facial", "Gentlemen's Facial", "Acne Treatment", "Back Facial", "Eyebrwo Tint", "Eyelash Tint", "HydraFacial: Face Only", "Hydra Facial: Face & Neck", "HydraFacial: Face, Neck & Decollate"];
-var skinPrice = ["50 min - $97", "50 min - $117", "65 min - $147", "50 min - $127", "50 min - $122", "50 min - $142", "50 min - $97", "$77", "45 min - $77", "$17", "$32", "45 min - $127", "45 min - $152", "60 min - $177"];
+var skinMenu = ["European Deep Cleansing Facial (50 min)", "Organic Facial (50 min)", "Organic Anti-Aging Facial (65 min)", "Glycolic Facial (50 min)", "Vitamin C Facial (50 min)", " Oxygenating Facial (50 min)", "Gentlemen's Facial (50 min)", "Acne Treatment", "Back Facial (45 min)", "Eyebrwo Tint", "Eyelash Tint", "HydraFacial: Face Only (45 min)", "Hydra Facial: Face & Neck (45 min)", "HydraFacial: Face, Neck & Decollate (60 min)"];
+var skinPrice = ["$97", "$117", "$147", "$127", "$122", "$142", "$97", "$77", "$77", "$17", "$32", "$127", "$152", "$177"];
 
 for (s = 0; s < skinMenu.length; s++) {
   $('#skin-menu-list').append('<li class="skin-list-items">' + skinMenu[s] + '</li>');
@@ -79,8 +79,8 @@ for (s = 0; s < skinMenu.length; s++) {
 // end of skin care and facial services
 
 // arrays and for loops for masssages and body treatments services
-var bodyMenu = ["Swedish Massage", "Aromatherapy Massage", "Deep Tissue Massage", "Pregnanacy Massage", "Hot Stone Massage", "Special Knead Massage", "Reflexology", "Sugar House Scrub", "Organic Chocolate Therapy", "Cellulite Treatment w/ Mei Cupping Massage"];
-var bodyPrice = ["50 min - $97, 80 min - &127", "50 min - $97, 80 min $127", "50 min - $97, 80 min $127", "50 min - $97, 80 min $127", "75 min - $137", "20 min - $62", "50 min - $97", "50 min - $97", "75 min - $127", "$127"];
+var bodyMenu = ["Swedish Massage (50 min)", "Swedish Massage (80 min)", "Aromatherapy Massage (50 min)", "Aromatherapy Massage (80 min)", "Deep Tissue Massage (50 min)", "Deep Tissue Massage (80 min)", "Pregnanacy Massage (50 min)", "Pregnanacy Massage (80 min)", "Hot Stone Massage (75 min)", "Special Knead Massage (20 min)", "Reflexology (50 min)", "Sugar House Scrub (50 min)", "Organic Chocolate Therapy (75 min)", "Cellulite Treatment w/ Mei Cupping Massage"];
+var bodyPrice = ["$97", "$127", "$97", "$127", "$97", "$127", "$97", "$127", "137", "$62", "$97", "$97", "$127", "$127"];
 
 for (b = 0; b < bodyMenu.length; b++) {
   $('#body-menu-list').append('<li class="body-list-items">' + bodyMenu[b] + '</li>');
@@ -88,11 +88,31 @@ for (b = 0; b < bodyMenu.length; b++) {
 }
 // end of massages and body treatments services
 
+// arrays and for loops for waxing services
+var waxingMenu = ["Chin", "Lip", "Sideburns", "Eyebrows", "Bikini", "French Bikini", "Brazilian Bikini", "Underarms", "Half Leg", "Half Leg & Bikini", "Full Leg", "Half Arm", "Full Arm", "Shoulder", "back"];
+var waxingPrice = ["$17", "$17", "$17", "$27", "$42", "$57", "$72", "$32", "$47", "$77", "$77", "$32", "$47", "$27", "$47 & up"];
 
+for (w = 0; w < waxingMenu.length; w++) {
+  $('#waxing-menu-list').append('<li class="waxing-list-items">' + waxingMenu[w] + '</li>');
+  $('#waxing-prices').append('<li class="price-waxing">' + waxingPrice[w] + '</li>');
+}
+// end of massages and waxing services
 
+// arrays and for loops for waxing services
+var mediSpaMenu = ["Short & Sweet", "A Sweet Treat", "Gentlemen's R & R", "Slice of Heaven", "The Sweet Life"];
+var mediSpaPrice = ["$176", "$196", "$221", "$273", "$480"];
+var microMenu = ["Face Only", "Face with Facial", "Face & Neck", "Face & Neck with Facial", "Face, Neck & Decollete", "Face, Neck & Decollete with Facial"]
+var microPrice = ["$107", "$157", "$132", "$182", "$182", "$232"];
 
-
-
+for (w = 0; w < mediSpaMenu.length; w++) {
+  $('.spa-packages-menu').after('<li class="medi-spa-list-items">' + mediSpaMenu[w] + '</li>');
+  $('.spa-packages-price').after('<li class="price-medi-spa">' + mediSpaPrice[w] + '</li>');
+}
+for (w = 0; w < microMenu.length; w++) {
+  $('.microderm-menu').after('<li class="microderm-items">' + microMenu[w] + '</li>');
+  $('.microderm-price').after('<li class="price-microderm">' + microPrice[w] + '</li>');
+}
+// end of massages and waxing services
 
 
 
