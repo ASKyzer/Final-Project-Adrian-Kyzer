@@ -272,19 +272,23 @@ body, main {
     margin: 0;
     padding: 0;
   }
+  .boutique-and-bridal-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
     .services-offered {
       height: 100%;
       padding: 0;
       margin: 0;
     }
     .sh-middle {
+      height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-around;
+      align-content: space-around;
       align-items: center;
-      align-content: center;
-      padding-top: 10% 0 5% 0;
-      margin: 15px 0 25px 0;
     }
     .book-online-2 {
       height: auto;
@@ -309,7 +313,6 @@ body, main {
     color: #46166B;
     font-size: 4em;
 }
-
 .social-media {
   padding: 0;
 }
@@ -413,7 +416,7 @@ body, main {
 footer {
   background-color: #f7f4fb;
     padding: 20px 40px;
-    margin: 20px 0 0 0;
+    margin: 0;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -801,6 +804,7 @@ p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
   align-items: center;
   justify-content: space-around;
   padding: 50px 0;
+  margin-top: 40px;
   background-color: #46166B;
 }
   .book-online-3 {
@@ -816,11 +820,6 @@ p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
     padding: 0;
     margin: 0;
     width: auto;
-    /*display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;*/
   }
 
 /*************************************************************/
@@ -836,14 +835,215 @@ p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
 .gallery-header {
   padding-top: 60px;
 }
-#gallery-images {
-  margin-bottom: 40px;
-}
-.gallery-img {
+.gallery-header img {
   width: 100%;
+  height: 60%;
 }
+/*.gallery-img {
+  width: 100%;
+}*/
 .select-col {
   padding: 5% 2%;
+}
+/* ---- grid ---- */
+
+.grid {
+  border: 1px solid #333;
+  background-color: #46166b;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.grid-item {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: auto;
+  /*margin: 5px;
+  padding: 10px;*/
+  background: red;
+  /*color: white;
+  font-size: 50px;*/
+}
+.grid-portrait {
+  width: 250px;
+  height: auto;
+}
+.grid-landscape {
+  width: 370px;
+  height: auto;
+}
+
+/* end of gallery page */
+
+/*************************************************************************/
+
+/* Contact Us Page */
+.contact-container {
+  background-image: url(../images/spa-bg.jpg);
+  background-position: bottom;
+  background-size: cover;
+  color: white;
+  font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
+  font-size: 16px;
+  height: 500px;
+  line-height: 1.5;
+  padding: 0 10%;
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container h1 {
+  font-size: 58px;
+  font-variant: small-caps;
+}
+.contact-container hr {
+    display: block;
+    width: 15%;
+    margin: 1em auto;
+    border: 1px solid #f07800;
+}
+.contact-container p {
+  text-align: center;
+}
+.contact-row {
+  display: flex;
+  }
+  .contact-info-col {
+    background-color: #f07800;
+    color: white;
+    font-size: 18px;
+    padding-left: 80px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .contact-info-col h1 {
+    font-size: 46px;
+    font-variant: small-caps;
+    padding-bottom: 15px;
+  }
+  .contact-info-col hr {
+    margin: 1em 0;
+    width: 40%;
+    display: block;
+    border: 1px solid #46166B;
+    text-align: left;
+  }
+    .contact-info-col span {
+      color: #46166B;
+      font-size: 20px;
+    }
+    .contact-info-col span.email {
+      font-size: 18px;
+    }
+    .form-col img {
+      width: 300px;
+      height: auto;
+    }
+  .icons {
+    padding-top: 50px;
+  }
+    .icons img {
+      width: 45px;
+      height: auto;
+    }
+    .icons img:hover {
+      width: 60px;
+      height: auto;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+    }
+
+.message-col {
+  background-color: white;
+  padding: 60px 35px;
+}
+  .hit-us-up h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .hit-us-up hr {
+    display: block;
+    width: 15%;
+    margin: 1em auto;
+    border: 1px solid #f07800;
+  }
+  .form-control {
+    border-style: none;
+  }
+  .form-input-box {
+    border-style: none;
+    border-bottom: 1px solid lightgray;
+    margin: 20px 0;
+  }
+  .enter-message {
+    color: lightgray;
+    padding-top: 15px;
+  }
+  textarea {
+    border-style: none;
+    width: 100%;
+  }
+  .form-col input {
+    color: lightgray;
+    font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
+    width: 100%;
+  }
+  .math {
+    text-align: center;
+    font-size: 26px;
+  }
+  .send-button {
+      background-color: black;
+      border-style: none;
+      border-radius: 5px;
+      color: white;
+      font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
+      height: 30px;
+      width: 130px;
+      margin-left: 15px;
+      margin-top: 10px;
+    }
+
+.map-col {
+  margin: 0;
+  padding: 0;
+}
+.google-maps {
+        position: relative;
+        padding-bottom: 30%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+.sh-booknow {
+  margin: 0;
+}
+.book-online-3:hover, .book-online:hover, .book-online-2:hover {
+  background-color: #f07800;
 }
 
 /* Media Queries ------------------------------------------------------------------------------------------------*/
@@ -879,7 +1079,16 @@ p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
   .four-col-row .overlay p {
     padding-top: 10px;
   }
+  .contact-row {
+    display: block;
+  }
+  .contact-info-col {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+  }
 }
+
 @media (min-width: 375px) and (max-width: 992px) {
   .email-phone {
     font-size: 12px;
@@ -919,10 +1128,16 @@ p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
     border: none;
     min-width: 100px;
   }
-
+  .contact-row {
+    display: block;
+  }
+  .contact-info-col {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
 }
 
-@media (min-width: 0px) and (max-width: 374px){
+@media (min-width: 0px) and (max-width: 375px){
   .container, .container-fluid {
     margin: 0;
     padding: 0;
@@ -967,5 +1182,22 @@ p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
     letter-spacing: 1.5px;
     text-align: left;
     min-width: 50px;
+  }
+  .contact-info-col {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+  }
+  .contact-container {
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+  }
+  .contact-container h1 {
+    font-size: 46px;
+  }
+  .google-maps {
+    padding-bottom: 50%;
   }
 }
