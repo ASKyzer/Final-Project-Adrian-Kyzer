@@ -2,21 +2,23 @@
 <html lang="en">
 
 <head>
-    <title>Sugar House Day Spa & Salon</title>
+    <title>Gallery | Sugar House Day Spa & Salon</title>
     <meta charset="utf-8">
     <!--viewport is users screen | initial scale regular zoom 100%-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- fonts from googlefonts -->
+    <link rel="stylesheet" href="./css/reset.css">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Raleway:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat" rel="stylesheet">
     <!-- font-awesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--css file with different styling, widgets-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/normalize.css" media="screen" title="no title">
-    <link rel="stylesheet" href="./css/reset.css">
-  	<link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="css/pure-css-select-style.css">
+    <!-- <link rel="stylesheet" href="./css/normalize.css" media="screen" title="no title"> -->
+  	<!-- <link rel="stylesheet" href="./css/isotope-docs.css"> -->
+    <link rel="stylesheet" href="./css/pure-css-select-style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -54,13 +56,13 @@
   <div class="container-fluid gallery-header">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 gallery-header-col">
-        <img src="./images/people.jpg" alt="" class="img-responsive"/>
+        <h1>Some of our Favorite Looks</h1>
       </div>
     </div>
   </div>
   <!-- .gallery-header collapse -->
   <!-- #select-stylist : stylist sector container -->
-  <div class="container-fluid" id="select-stylist">
+  <!-- <div class="container-fluid" id="select-stylist">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 select-col">
           <div class="pure-css-select-style theme-square stylist-sel">
@@ -82,31 +84,63 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   <!-- #select-stylist collapse -->
   <!-- #gallery-images container -->
   <div class="container-fluid" id="gallery-images">
-    <div class="row first-row">
-      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
-        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
-        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
-        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
-        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
-        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
-        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+    <div class="row button-row stylist-names-row">
+      <div class="button-group filters-button-group">
+        <button class="button is-checked" data-filter="*">show all</button>
+        <button class="button" data-filter=".adrian">Adrian</button>
+        <button class="button" data-filter=".danielle">Danielle</button>
+        <button class="button" data-filter=".nigisti">Nigisti</button>
+        <button class="button" data-filter=":betty">Betty</button>
+        <button class="button" data-filter="danita">Danita</button>
+        <button class="button" data-filter="Jessica">Jessica</button>
       </div>
     </div>
-    <div class="row second-row">
+    <div class="row gallery-row">
+      <div class="grid">
+        <div class="grid-item" data-category="adrian"><img src="./images/adrian02.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="betty"><img src="./images/betty01.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="danielle"><img src="./images/danielle01.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="jessica"><img src="./images/jessica01.jpeg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="danita"><img src="./images/danita01.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="nigisti"><img src="./images/nigisti01.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="danielle"><img src="./images/danielle02.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="danita"><img src="./images/danita02.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="betty"><img src="./images/betty02.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="adrian"><img src="./images/adrian03.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="jessica"><img src="./images/jessica02.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="betty"><img src="./images/betty03.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="adrian"><img src="./images/adrian03.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="adrian"><img src="./images/adrian01.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="danielle"><img src="./images/danielle03.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="nigisti"><img src="./images/nigisti03.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="danita"><img src="./images/danita03.png" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="jessica"><img src="./images/jessica03.jpeg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="adrian"><img src="./images/adrian04.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="betty"><img src="./images/betty04.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="jessica"><img src="./images/jessica04.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="danielle"><img src="./images/danielle04.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="danita"><img src="./images/danita04.jpeg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="nigisti"><img src="./images/nigisti04.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="nigisti"><img src="./images/nigisti05.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="adrian"><img src="./images/adrian05.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="betty"><img src="./images/betty05.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="danita"><img src="./images/danita05.jpeg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="betty"><img src="./images/betty06.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="danielle"><img src="./images/danielle05.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="jessica"><img src="./images/jessica05.jpeg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="jessica"><img src="./images/jessica06.png" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="danita"><img src="./images/danita06.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="adrian"><img src="./images/adrian06.jpg" alt="Adrian 06" class="img-responsive"/></div>
+        <div class="grid-item" data-category="danielle"><img src="./images/danielle06.jpg" alt="" class="img-responsive"/></div>
+        <div class="grid-item" data-category="nigisti"><img src="./images/nigisti06.jpg" alt="Nigisti 06" class="img-responsive"/></div>
+      </div>
+      </div>
+    </div>
+    <!-- <div class="row second-row">
       <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
         <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
       </div>
@@ -120,7 +154,7 @@
         <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
       </div>
       <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
-        <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
+        <img src="./images/betty01.jpg" alt="" class="img-responsive gallery-img" />
       </div>
       <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
         <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
@@ -165,7 +199,7 @@
       <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 gallery-col">
         <img src="./images/finger-waves.jpg" alt="" class="img-responsive gallery-img" />
       </div>
-    </div>
+    </div> -->
   </div>
   <!--  gallery container collapse-->
 
@@ -217,12 +251,26 @@
   <a href="http://sugarhousedayspa.com/info">Job Opportunities</a>
 </footer>
 
+    <!-- <script type="text/javascript">
+
+    jQuery(document).ready(function(){
+
+      jQuery("#gallery").unitegallery();
+
+    });
+
+    </script> -->
+
+
     <!--standard jquery library-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!--bootstrap javascript file-->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!--  my js file -->
+    <script src="./js/isotope-docs.min.js"></script>
+    <!-- <script src="./js/jquery.min.js"></script> -->
     <script src="./js/main.js"></script>
+
 
 </body>
 
