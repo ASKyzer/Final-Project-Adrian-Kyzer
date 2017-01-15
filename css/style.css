@@ -908,6 +908,10 @@ p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
 .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
 .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
 
+
+.gallery-row {
+
+}
 /* ---- isotope ---- */
 /* ---- grid ---- */
 
@@ -927,13 +931,12 @@ p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
 
 .grid-item {
   position: relative;
-  align-content: center;
+  align-items: center;
   float: left;
   width: 200px;
   height: auto;
   margin: 0px;
-  padding: 10px;
-  /*background: black;*/
+  padding: 5px 10px;
   color: white;
   font-size: 50px;
 }
@@ -945,8 +948,12 @@ p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
   min-height: auto;
 }
 .grid-portrait {
-  max-height: 400px;
+  max-height: 450px;
+  max-width: 375px;
 }
+/*
+.grid-item--width2 { width: 210px; }
+.grid-item--height2 { height: 210px; }*/
 
 /* end of gallery page */
 
