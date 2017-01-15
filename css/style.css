@@ -853,26 +853,35 @@ p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
 
 /* ---- button ---- */
 
+.stylist-button {
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+flex-wrap: wrap;
+}
 .button-row {
   background-color: white;
   display: flex;
   justify-content: center;
-  padding: 40px 10px 30px 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 5px 30px 5px;
 }
 .button {
   display: inline-block;
   padding: 10px 18px;
   margin-bottom: 10px;
-  background: #46166B;
-  border: none;
+  background: white;
+  border: 1px solid #46166B;
   border-radius: 7px;
-  color: white;
+  color: orange;
   font-size: 16px;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: white;
+  background-color: #bc93cc;
   text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
   color: #222;
 }
@@ -904,13 +913,13 @@ p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
   margin-left: 0;
   margin-right: 1px;
 }
-
+/*
 .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
-.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }*/
 
 
 .gallery-row {
-
+padding-left: 3%;
 }
 /* ---- isotope ---- */
 /* ---- grid ---- */
@@ -1275,6 +1284,23 @@ p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
     padding-bottom: 50%;
   }
   .grid-item {
-    width: 375px;
+    width: 365px;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 451px) {
+  .grid-item {
+    min-width: 375px;
+    max-width: 450px;
+    }
+  .gallery-row {
+    padding-left: 5%;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 667px) {
+  .gallery-row {
+    padding-left: 0;
   }
 }
