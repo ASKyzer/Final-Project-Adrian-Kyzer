@@ -3,7 +3,7 @@
 /* 2017 */
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
   line-height: 1.4;
   margin: 0;
   padding: 0;
@@ -11,7 +11,6 @@
 
 a, a:hover {
   text-decoration: none;
-  /*font-family: 'Open Sans', Helvetica, sans-serif;*/
 }
 
 /* css for Navigation Bar */
@@ -340,12 +339,13 @@ body, main {
 }
 .our-work a {
   font-size: 28px;
-  color: #71277B;
-  font-family: 'Montserrat', 'Open Sans', helvetica, sans-serif;
+  color: #f07800;
+  font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
   text-transform: uppercase;
 }
-
-
+.our-work a:hover {
+  color: #71127a;
+}
 .social-and-special-row {
   display: flex;
   justify-content: center;
@@ -353,22 +353,31 @@ body, main {
   align-content: center;
   flex-wrap: wrap;
 }
-
 .email-phone {
   padding: 10px;
-  margin-top: 5px;
-  color: #71277A;
-  font-family: 'Montserrat', 'Open Sans', helvetica, sans-serif;
+  color: black;
+  font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
 }
 .email-phone p {
   text-align: center;
-  padding: 2px 0;
+  padding: 5px 0;
 }
-  .email-phone p:nth-child(3) {
-    margin-top: 30px;
-  }
-
+.media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.email-link p a {
+  text-align: center;
+  color: black;
+}
+.media-icons p a:hover {
+  text-align: center;
+  color: white;
+}
 .purple-logo-container {
+  padding: 40px 0;
   text-align: center;
   display: flex;
   align-items: center;
@@ -379,37 +388,19 @@ body, main {
   width: 100%;
   height: auto;
 }
-
+.social-special-container {
+  background-color: #f07800;
+}
 .media-icons {
-  padding: 40px;
-  text-align: center;
+  /*text-align: center;
   color: #71277A;
-  font-family: 'Montserrat';
+  font-family: 'Raleway';*/
 }
-.media-icons p,a,input {
-  padding: 10px 0;
+.media-icons a img {
+  width: 30px;
+  height: auto;
+  padding-bottom: 20px;
 }
-  .media-icons p:nth-child(6) {
-    margin-top: 20px;
-  }
-  input.underline {
-    font-size: 10px;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.4;
-    letter-spacing: 2px;
-    text-align: center;
-    border: none;
-    min-width: 170px;
-    display: block;
-    margin: auto;
-    padding: 0;
-    overflow: visible;
-    border-bottom: 1px solid #bbb;
-    background-color: transparent;
-    -webkit-appearance: none;
-    border-radius: 0;
-  }
 
 /* bottom footer bar with links to info page */
 footer {
@@ -1267,6 +1258,7 @@ padding-bottom: 30px;
   }
   .purple-logo-container {
     order: -1;
+    padding: 20px 0 10px 0;
   }
   .book-online-2 {
     height: auto;
@@ -1279,6 +1271,7 @@ padding-bottom: 30px;
     font-size: 18px;
   }
 }
+
 @media (min-width: 0px) and (max-width: 600px) {
   .menu-col {
     font-size: 12px;
@@ -1295,6 +1288,9 @@ padding-bottom: 30px;
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
+  }
+  .email-link p a {
+    color: black;
   }
   .four-col-row .overlay h2 {
     padding: 0;
@@ -1315,42 +1311,19 @@ padding-bottom: 30px;
 
 @media (min-width: 375px) and (max-width: 992px) {
   .email-phone {
-    font-size: 12px;
-    padding-left:10px;
-    padding-right: 3px;
+    font-size: 14px;
   }
-  .email-phone p:nth-child(1) {
-    padding-top: 15px;
-  }
-  .email-phone p:nth-child(3) {
-    padding-top: 35px;
-    margin-top: 0;
-  }
-  .purple-logo-container {
-    padding: 40px 0 0 0;
+  .media-container {
+    display: flex;
+    justify-content: space-around;
   }
   .media-icons {
     text-align: center;
     padding: 0;
   }
-  .media-icons p {
-    font-size: 12px;
-    padding-bottom: 3px;
-  }
-  .social-img {
-    width: 25px;
-    height: auto;
-    padding: 0 2px;
-  }
-  input.underline {
-    font-size: 12px;
-    font-size: .7rem;
-    font-weight: 400;
-    line-height: 1.4;
-    letter-spacing: 1.8px;
-    text-align: center;
-    border: none;
-    min-width: 100px;
+  .email-link {
+    font-size: 14px;
+    /*color: black;*/
   }
   .contact-row {
     display: block;
@@ -1367,45 +1340,15 @@ padding-bottom: 30px;
     padding: 0;
   }
   .email-phone {
-    font-size: 10px;
-    padding-left:10px;
-    padding-right: 3px;
+    font-size: 12px;
+    padding: 0 0 10px 10px;
   }
-  .email-phone p:nth-child(1) {
-    padding-top: 35px;
-  }
-  .email-phone p:nth-child(3) {
-    padding-top: 20px;
-    margin-top: 0;
-  }
-  .purple-logo-container {
-    padding: 40px 0 0 0;
-  }
-  .media-container {
-    padding-right: 0;
-  }
-  .media-icons {
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-    font-size: 10px;
-  }
-  .media-icons p {
-    font-size: 10px;
-  }
-  .social-img {
-    width: 20px;
-    height: auto;
-    padding: 0 1px;
-  }
-  input.underline {
-    font-size: 10px;
-    font-size: .6rem;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: 1.5px;
-    text-align: left;
-    min-width: 50px;
+.media-container {
+  padding-bottom: 10px;
+}
+  .email-link p a {
+    font-size: 12px;
+    padding-right: 5px;
   }
   .contact-info-col {
     padding-top: 40px;
