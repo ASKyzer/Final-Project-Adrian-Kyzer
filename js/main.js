@@ -114,13 +114,59 @@ for (w = 0; w < microMenu.length; w++) {
 }
 // end of massages and waxing services
 
+// ***** js for STAFF staff.html page to bring up stylist's social medial icons upon click
 
-
-
-
-
-
-
+$('.staff-row-adrian').click(function(){
+  $('.stylist-social-links-adrian').toggle(this);
+});
+$('.staff-row-danielle').click(function(){
+  $('.stylist-social-links-danielle').toggle(this);
+});
+// $('.staff-row-betty').click(function(){
+//   $('.stylist-social-links-betty').toggle(this);
+// });
+// $('.staff-row-danita').click(function(){
+//   $('.stylist-social-links-danita').toggle(this);
+// });
+// $('.staff-row-nagisti').click(function(){
+//   $('.stylist-social-links-nagisti').toggle(this);
+// });
+// $('.staff-row-jessica').click(function(){
+//   $('.stylist-social-links-jessica').toggle(this);
+// });
+// $('.staff-row-adrian').click(function(){
+//   $('.stylist-social-links-adrian').toggle(this);
+// });
+// $('.staff-row-danielle').click(function(){
+//   $('.stylist-social-links-danielle').toggle(this);
+// });
+// $('.staff-row-adrian').click(function(){
+//   $('.stylist-social-links-adrian').toggle(this);
+// });
+// $('.staff-row-danielle').click(function(){
+//   $('.stylist-social-links-danielle').toggle(this);
+// });
+// $('.staff-row-adrian').click(function(){
+//   $('.stylist-social-links-adrian').toggle(this);
+// });
+// $('.staff-row-danielle').click(function(){
+//   $('.stylist-social-links-danielle').toggle(this);
+// });
+// $('.staff-row-adrian').click(function(){
+//   $('.stylist-social-links-adrian').toggle(this);
+// });
+// $('.staff-row-danielle').click(function(){
+//   $('.stylist-social-links-danielle').toggle(this);
+// });
+// $('.staff-row-adrian').click(function(){
+//   $('.stylist-social-links-adrian').toggle(this);
+// });
+// $('.staff-row-danielle').click(function(){
+//   $('.stylist-social-links-danielle').toggle(this);
+// });
+//
+//
+//
 
 
 
