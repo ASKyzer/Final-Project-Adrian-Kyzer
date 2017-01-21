@@ -50,10 +50,23 @@
 
   <!--blank div set to height of navbar so the content can start right below it  -->
   <div id="top-of-page">
+  </div>
+  <!-- buttons to choose menu category -->
+  <div id="select-menu-category-btn">
+    <div class="stylist-button button-group filters-button-group">
+      <button id="hairBtn" class="button is-checked" data-filter="">Hair</button>
+      <button id="nailsBtn" class="button" data-filter="">Nails</button>
+      <button id="makeupBtn" class="button" data-filter="">Make-Up</button>
+      <button id="bodyBtn" class="button" data-filter="">Massage</button>
+      <button id="waxingBtn" class="button" data-filter="">Waxing</button>
+      <button id="skinBtn" class="button" data-filter="">Skin Care</button>
+      <button id="mediBtn" class="button" data-filter="">Medi-Spa</button>
+      <button id="spaBtn" class="button" data-filter="*">Spa Packages</button>
 
+    </div>
   </div>
   <!-- hair services container -->
-  <div class="container-fluid service hair">
+  <div id="hairAnchor" class="container-fluid service hair">
     <div class="row services-row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 service-col">
         <div class="hair-bg">
@@ -78,7 +91,7 @@
   </div>
   <!-- end of hair container -->
   <!-- nails services container -->
-  <div class="container-fluid service nails">
+  <div id="nailsAnchor" class="container-fluid service nails">
     <div class="row services-row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-push-6 col-lg-push-6 service-col">
         <div class="nails-bg">
@@ -103,7 +116,7 @@
   </div>
   <!-- end of nails container -->
   <!-- makeup services container -->
-  <div class="container-fluid sercive makeup">
+  <div id="makeupAnchor" class="container-fluid sercive makeup">
     <div class="row services-row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 service-col">
         <div class="makeup-bg">
@@ -128,7 +141,7 @@
   </div>
   <!-- end of makeup container -->
   <!-- facial and skin care services container -->
-  <div class="container-fluid service skin">
+  <div  id="skinAnchor" class="container-fluid service skin">
     <div class="row services-row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-push-6 col-lg-push-6 service-col">
         <div class="skin-bg">
@@ -153,11 +166,13 @@
   </div>
   <!-- end of facial and skin care container -->
   <!-- body (massages and body treatments) services container -->
-  <div class="container-fluid service body">
+  <div  id="bodyAnchor" class="container-fluid service body">
     <div class="row services-row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 service-col">
         <div class="body-bg">
           <img src="./images/stone-massage.jpg" alt="" class="img-responsive service-img" />
+          <img src="./images/medi-treatment-small.jpg" alt="" class="img-responsive service-img-hide" />
+          <h4 class="no-pic-category">Massage & Body Treatments</h4>
         </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 menu-col">
@@ -178,11 +193,12 @@
   </div>
   <!-- end of body treatment container -->
   <!-- medical spa and spa packages services container -->
-  <div class="container-fluid service medi-spa">
+  <div  id="mediAnchor" class="container-fluid service medi-spa">
     <div class="row services-row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-push-6 col-lg-push-6 service-col">
         <div class="medi-spa-bg">
           <img src="./images/medi-treatment.jpg" alt="" class="img-responsive service-img" />
+          <img src="./images/medi-treatment-small.jpg" alt="" class="img-responsive service-img-hide" />
         </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-pull-6 col-lg-pull-6 menu-col">
@@ -195,7 +211,7 @@
   </div>
   <!-- medi-spa container collapse-->
   <!-- waxing services container -->
-  <div class="container-fluid service waxing">
+  <div id="waxingAnchor" class="container-fluid service waxing">
     <div class="row services-row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 service-col">
         <div class="waxing-bg">
@@ -220,7 +236,7 @@
   </div>
   <!-- end of waxing container -->
   <!-- medical spa and spa packages services container -->
-  <div class="container-fluid service medi-spa">
+  <div  id="spaAnchor" class="container-fluid service medi-spa">
     <div class="row services-row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-push-6 col-lg-push-6 service-col">
         <div class="medi-spa-bg">
