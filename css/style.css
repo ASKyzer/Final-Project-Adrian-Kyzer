@@ -206,6 +206,7 @@ body, main {
     text-transform: uppercase;
   }
 
+
   .book-online {
     color: #ffffff;
     border: 1px solid white;
@@ -227,13 +228,14 @@ body, main {
       align-items: center;
       align-items: center;
     }
-      .logo-image {
-        width: auto;
-        height: 100%;
-      }
+
       .since {
         color: white;
         font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
+      }
+      #logo {
+        width: auto;
+        height: 100%;
       }
 
 #welcome-container {
@@ -355,7 +357,7 @@ body, main {
 }
 .email-phone {
   padding: 10px;
-  color: black;
+  color: white;
   font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
 }
 .email-phone p {
@@ -370,11 +372,11 @@ body, main {
 }
 .email-link p a {
   text-align: center;
-  color: black;
-}
-.media-icons p a:hover {
-  text-align: center;
   color: white;
+}
+.email-link p a:hover {
+  text-align: center;
+  color: #71277A;
 }
 .purple-logo-container {
   padding: 40px 0;
@@ -725,15 +727,50 @@ footer {
 #top-of-page {
   height: 70px;
 }
+/* menu category buttons */
 
+#select-menu-category-btn {
+  /*background-image: url(../images/purple-bokeh.jpg);
+  background-size: cover;
+  background-position: center;*/
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+  height: auto;
+  width: 100%;
+  padding: 2% 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 /* hair services container */
+
+.service.hair {
+  margin-top: 100px;
+}
 
 /*centering menu items within the row*/
 .services-row {
   display: flex;
   align-items: center;
+  background-color: #f7f4fb;
 }
-
+/* will replace the taller pic when the menu goes to single row */
+.service-img-hide {
+  display: none;
+}
+.no-pic-category {
+  background-color: #46166B;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin-top: 75px;
+  padding: 35px 5px;
+  display: none;
+}
 .menu-col {
   padding: 20px 50px;
 }
@@ -746,19 +783,10 @@ footer {
     justify-content: space-around;
   }
 
-.semi-perm-items, .semi-perm-price {
-  font-size: 16px;
-  color: #f00;
-  padding: 10px 0;
-  font-style: normal;
-  font-weight: bold;
-}
-
 .menu {
   color: #71277A;
   font-weight: 600;
 }
-
 
 .price {
   color: #46166B;
@@ -768,19 +796,19 @@ footer {
 
 .gerrish {
   font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
-  padding: 10px 0 30px 0;
+  padding: 5px 0 5px 0;
 }
   .gerrish span {
     color: #71277A;
     font-weight: 600;
   }
   span.medi-offer {
-    color: #F00;
+    color: #f07800;
   }
 
-p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
+.semi-perm-items, .semi-perm-price, p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
   font-size: 16px;
-  color: #f00;
+  color: #f07800;
   padding: 10px 0;
   font-style: normal;
   font-weight: bold;
@@ -821,12 +849,12 @@ p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
 /* making the header visible under the fixed navbar*/
 
 .gallery-header {
-  padding-top: 60px;
-  background-image: url(../images/spa-bg.jpg);
+  margin-top: 70px;
+  background-image: url(../images/purple-bokeh.jpg);
   background-size: cover;
   background-position: center;
   color: white;
-  height: 300px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -834,8 +862,10 @@ p.spa-packages-menu, p.microderm-menu, p.spa-packages-price, p.microderm-price {
 }
 .gallery-header-col h1 {
   text-align: center;
-  font-size: 48px;
+  font-size: 58px;
   font-variant: small-caps;
+  text-shadow: 1px 1px 3px rgba(70, 22, 107, 0.7);
+
 }
 
 /* ---- button ---- */
@@ -901,8 +931,10 @@ flex-wrap: wrap;
 }
 
 .gallery-row {
-padding-left: 3%;
-padding-bottom: 30px;
+  background-color: #bc93cc;
+  padding-top: 30px;
+  padding-left: 3%;
+  padding-bottom: 30px;
 }
 
 /* ---- isotope ---- */
@@ -910,7 +942,6 @@ padding-bottom: 30px;
 
 .grid {
   background-color: #bc93cc;
-  background-color: white;
 }
 
 /* clear fix */
@@ -928,21 +959,23 @@ padding-bottom: 30px;
   float: left;
   width: 200px;
   height: auto;
-  margin: 0px;
-  padding: 5px 10px;
+  margin: 10px;
+  /*padding: 5px 10px;*/
   color: white;
+  background-color: white;
 }
   .grid-item img {
-    border: 1px solid black;
+    padding: 5px 5px 20% 5px;
+    border: 1px solid gray;
   }
-.grid-landscape {
+/*.grid-landscape {
   max-width: 450px;
   min-height: auto;
 }
 .grid-portrait {
   max-height: 450px;
   max-width: 375px;
-}
+}*/
 
 /* end of gallery page */
 
@@ -1165,6 +1198,10 @@ padding-bottom: 30px;
   margin: 1em auto;
   border: 1px solid #f07800;
 }
+.new-client img {
+  text-align: center;
+  margin: 0 auto;
+}
 
 .jobs p a {
   color: #f07800;
@@ -1179,9 +1216,9 @@ padding-bottom: 30px;
 /* staff.html STAFF page */
 
 #staff-header {
-  height: 300px;
+  height: 200px;
   margin-top: 70px;
-  background-image: url(../images/spa-bg.jpg);
+  background-image: url(../images/purple-bokeh.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -1207,15 +1244,53 @@ padding-bottom: 30px;
     background-color: white;
   }
 
+.staff-col .row-fluid {
+  cursor: pointer;
+}
+
 .staff-pic-col {
   background-color: white;
   padding: 10px;
+  position: relative;
 }
 .staff-col {
   display: flex;
 }
 .staff-col:last-child {
   margin-bottom: 25px;
+}
+.stylist-social-links-adrian,
+  .stylist-social-links-danielle,
+  .stylist-social-links-betty,
+  .stylist-social-links-nigisti,
+  .stylist-social-links-danita,
+  .stylist-social-links-jessica,
+  .stylist-social-links-jessmaia,
+  .stylist-social-links-julia,
+  .stylist-social-links-luis,
+  .stylist-social-links-tracy,
+  .stylist-social-links-jose,
+  .stylist-social-links-rob,
+  .stylist-social-links-mulan,
+  .stylist-social-links-anna,
+  .stylist-social-links-carmen,
+  .stylist-social-links-josephine   {
+    background-color: rgba(240, 120, 0, 0.7);
+    border: 15px solid #f07800;
+    width: 100%;
+    height: 100%;
+    padding: 15% 5% 0 5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+}
+
+#links-show a img {
+  width: 85px;
+  height: auto;
+  padding: 5px;
 }
 .name-title {
   background-color: white;
@@ -1270,6 +1345,13 @@ padding-bottom: 30px;
     text-transform: uppercase;
     font-size: 18px;
   }
+  .service-img {
+    display: none;
+  }
+  .service-img-hide {
+    display: block;
+  }
+
 }
 
 @media (min-width: 0px) and (max-width: 600px) {
@@ -1288,9 +1370,6 @@ padding-bottom: 30px;
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
-  }
-  .email-link p a {
-    color: black;
   }
   .four-col-row .overlay h2 {
     padding: 0;
@@ -1311,19 +1390,14 @@ padding-bottom: 30px;
 
 @media (min-width: 375px) and (max-width: 992px) {
   .email-phone {
-    font-size: 14px;
-  }
-  .media-container {
-    display: flex;
-    justify-content: space-around;
+    font-size: 16px;
   }
   .media-icons {
     text-align: center;
     padding: 0;
   }
   .email-link {
-    font-size: 14px;
-    /*color: black;*/
+    font-size: 16px;
   }
   .contact-row {
     display: block;
@@ -1368,10 +1442,9 @@ padding-bottom: 30px;
     padding-bottom: 50%;
   }
   .grid-item {
-    width: 365px;
+    width: 340px;
     padding-left: 0;
   }
-
   #staff-container div .col-xs-4, #staff-container div .col-xs-8, .staff-col {
     padding: 0;
     margin: 0;
@@ -1402,6 +1475,15 @@ padding-bottom: 30px;
   .name-title p {
     font-size: 16px;
   }
+  .service-img {
+    display: none;
+  }
+  .service-img-hide {
+    display: none;
+  }
+  .no-pic-category {
+    display: block;
+  }
 }
 
 @media (min-width: 376px) and (max-width: 451px) {
@@ -1415,10 +1497,42 @@ padding-bottom: 30px;
   #staff-header h1 {
     font-size: 44px;
   }
+  .staff-pic-col {
+    position: static;
+  }
+  .staff-col {
+    position: relative;
+    display: none;
+  }
+  .stylist-social-links-adrian,
+    .stylist-social-links-danielle,
+    .stylist-social-links-betty,
+    .stylist-social-links-nigisti,
+    .stylist-social-links-danita,
+    .stylist-social-links-jessica,
+    .stylist-social-links-jessmaia,
+    .stylist-social-links-julia,
+    .stylist-social-links-luis,
+    .stylist-social-links-tracy,
+    .stylist-social-links-jose,
+    .stylist-social-links-rob,
+    .stylist-social-links-mulan,
+    .stylist-social-links-anna,
+    .stylist-social-links-carmen,
+    .stylist-social-links-josephine   {
+      padding: 5% 5% 0 5%;
+      position: absolute;
+  }
+  #staff-header h1 {
+    font-size: 44px;
+  }
 }
 
 @media (min-width: 451px) and (max-width: 667px) {
   .gallery-row {
     padding-left: 0;
+  }
+  #staff-header h1 {
+    font-size: 44px;
   }
 }
