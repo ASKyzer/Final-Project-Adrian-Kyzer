@@ -122,51 +122,97 @@ $('.staff-row-adrian').click(function(){
 $('.staff-row-danielle').click(function(){
   $('.stylist-social-links-danielle').toggle(this);
 });
-// $('.staff-row-betty').click(function(){
-//   $('.stylist-social-links-betty').toggle(this);
-// });
-// $('.staff-row-danita').click(function(){
-//   $('.stylist-social-links-danita').toggle(this);
-// });
-// $('.staff-row-nagisti').click(function(){
-//   $('.stylist-social-links-nagisti').toggle(this);
-// });
-// $('.staff-row-jessica').click(function(){
-//   $('.stylist-social-links-jessica').toggle(this);
-// });
-// $('.staff-row-adrian').click(function(){
-//   $('.stylist-social-links-adrian').toggle(this);
-// });
-// $('.staff-row-danielle').click(function(){
-//   $('.stylist-social-links-danielle').toggle(this);
-// });
-// $('.staff-row-adrian').click(function(){
-//   $('.stylist-social-links-adrian').toggle(this);
-// });
-// $('.staff-row-danielle').click(function(){
-//   $('.stylist-social-links-danielle').toggle(this);
-// });
-// $('.staff-row-adrian').click(function(){
-//   $('.stylist-social-links-adrian').toggle(this);
-// });
-// $('.staff-row-danielle').click(function(){
-//   $('.stylist-social-links-danielle').toggle(this);
-// });
-// $('.staff-row-adrian').click(function(){
-//   $('.stylist-social-links-adrian').toggle(this);
-// });
-// $('.staff-row-danielle').click(function(){
-//   $('.stylist-social-links-danielle').toggle(this);
-// });
-// $('.staff-row-adrian').click(function(){
-//   $('.stylist-social-links-adrian').toggle(this);
-// });
-// $('.staff-row-danielle').click(function(){
-//   $('.stylist-social-links-danielle').toggle(this);
-// });
-//
-//
-//
+$('.staff-row-betty').click(function(){
+  $('.stylist-social-links-betty').toggle(this);
+});
+$('.staff-row-danita').click(function(){
+  $('.stylist-social-links-danita').toggle(this);
+});
+$('.staff-row-nigisti').click(function(){
+  $('.stylist-social-links-nigisti').toggle(this);
+});
+$('.staff-row-jessica').click(function(){
+  $('.stylist-social-links-jessica').toggle(this);
+});
+$('.staff-row-jessmaia').click(function(){
+  $('.stylist-social-links-jessmaia').toggle(this);
+});
+$('.staff-row-julia').click(function(){
+  $('.stylist-social-links-julia').toggle(this);
+});
+$('.staff-row-luis').click(function(){
+  $('.stylist-social-links-luis').toggle(this);
+});
+$('.staff-row-tracy').click(function(){
+  $('.stylist-social-links-tracy').toggle(this);
+});
+$('.staff-row-jose').click(function(){
+  $('.stylist-social-links-jose').toggle(this);
+});
+$('.staff-row-rob').click(function(){
+  $('.stylist-social-links-rob').toggle(this);
+});
+$('.staff-row-mulan').click(function(){
+  $('.stylist-social-links-mulan').toggle(this);
+});
+$('.staff-row-anna').click(function(){
+  $('.stylist-social-links-anna').toggle(this);
+});
+$('.staff-row-carmen').click(function(){
+  $('.stylist-social-links-carmen').toggle(this);
+});
+$('.staff-row-josephine').click(function(){
+  $('.stylist-social-links-josephine').toggle(this);
+});
+
+/**********************************************************************/
+ // Buttons to Scroll to div on click
+
+$('#waxingBtn').click(function(e){
+  $('html, body').animate({
+        scrollTop: $("#waxingAnchor").offset().top -160
+    }, 2000);
+});
+$('#makeupBtn').click(function(e){
+  $('html, body').animate({
+        scrollTop: $("#makeupAnchor").offset().top -160
+    }, 2000);
+});
+$('#skinBtn').click(function(e){
+  $('html, body').animate({
+        scrollTop: $("#skinAnchor").offset().top -160
+    }, 2000);
+});
+$('#hairBtn').click(function(e){
+  $('html, body').animate({
+        scrollTop: $("#hairAnchor").offset().top -160
+    }, 2000);
+});
+$('#spaBtn').click(function(e){
+  $('html, body').animate({
+        scrollTop: $("#spaAnchor").offset().top -160
+    }, 2000);
+});
+$('#mediBtn').click(function(e){
+  $('html, body').animate({
+        scrollTop: $("#mediAnchor").offset().top -160
+    }, 2000);
+});
+$('#bodyBtn').click(function(e){
+  $('html, body').animate({
+        scrollTop: $("#bodyAnchor").offset().top -160
+    }, 2000);
+});
+$('#nailsBtn').click(function(e){
+  $('html, body').animate({
+        scrollTop: $("#nailsAnchor").offset().top -160
+    }, 2000);
+});
+
+
+
+
+
 
 
 
