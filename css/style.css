@@ -763,8 +763,9 @@ footer {
 .no-pic-category {
   background-color: #46166B;
   color: white;
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
+  font-variant: small-caps;
   width: 100%;
   height: auto;
   margin-top: 75px;
@@ -1408,7 +1409,7 @@ flex-wrap: wrap;
   }
 }
 
-@media (min-width: 0px) and (max-width: 375px){
+@media (min-width: 0px) and (max-width: 414px){
   .container, .container-fluid {
     margin: 0;
     padding: 0;
@@ -1484,6 +1485,17 @@ flex-wrap: wrap;
   .no-pic-category {
     display: block;
   }
+  #select-menu-category-btn {
+    display: none;
+  }
+  .no-pic-category {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #hairAnchor {
+    margin-top: 0;
+  }
+
 }
 
 @media (min-width: 376px) and (max-width: 451px) {
@@ -1502,7 +1514,7 @@ flex-wrap: wrap;
   }
   .staff-col {
     position: relative;
-    display: none;
+    /*display: none;*/
   }
   .stylist-social-links-adrian,
     .stylist-social-links-danielle,
@@ -1534,5 +1546,44 @@ flex-wrap: wrap;
   }
   #staff-header h1 {
     font-size: 44px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .staff-pic-col {
+    position: relative;
+  }
+  .staff-col {
+    position: static;
+    display: none;
+  }
+  .stylist-social-links-adrian,
+    .stylist-social-links-danielle,
+    .stylist-social-links-betty,
+    .stylist-social-links-nigisti,
+    .stylist-social-links-danita,
+    .stylist-social-links-jessica,
+    .stylist-social-links-jessmaia,
+    .stylist-social-links-julia,
+    .stylist-social-links-luis,
+    .stylist-social-links-tracy,
+    .stylist-social-links-jose,
+    .stylist-social-links-rob,
+    .stylist-social-links-mulan,
+    .stylist-social-links-anna,
+    .stylist-social-links-carmen,
+    .stylist-social-links-josephine   {
+      padding: 5% 5% 0 5%;
+      position: absolute;
+      bottom: 0;
+      z-index: 10;
+  }
+}
+@media (min-width: 667px) and (max-width: 831px) {
+  .stylist-button button {
+    width: auto;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
