@@ -1528,6 +1528,7 @@ flex-wrap: wrap;
       position: absolute;
   }
 }
+
 @media (min-width: 0px) and (max-width: 831px) {
   /* made the header small to look better for shorter screen height*/
   .gallery-header {
@@ -1567,7 +1568,7 @@ flex-wrap: wrap;
     position: relative;
   }
   #links-show a img {
-    width: 65px;
+    width: 55px;
   }
   .stylist-social-links-adrian,
     .stylist-social-links-danielle,
