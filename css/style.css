@@ -230,8 +230,11 @@ body, main {
     }
 
       .since {
+        text-align: center;
         color: white;
         font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
+        font-size: 250px;
+
       }
       #logo {
         width: auto;
