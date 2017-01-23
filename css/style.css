@@ -100,7 +100,7 @@ nav ul li ul li a {
   position: absolute;
   top: 0;
   right: 0;
-  background: #46116b;
+  background: #46116B;
   height: 70px;
   width: 70px;
 }
@@ -392,11 +392,6 @@ body, main {
 }
 .social-special-container {
   background-color: #f07800;
-}
-.media-icons {
-  /*text-align: center;
-  color: #71277A;
-  font-family: 'Raleway';*/
 }
 .media-icons a img {
   width: 30px;
@@ -730,10 +725,6 @@ footer {
 /* menu category buttons */
 
 #select-menu-category-btn {
-  /*background-image: url(../images/purple-bokeh.jpg);
-  background-size: cover;
-  background-position: center;*/
-  background-color: white;
   position: fixed;
   z-index: 10;
   height: auto;
@@ -775,14 +766,13 @@ footer {
 .menu-col {
   padding: 20px 50px;
 }
-
-  .menu-items {
-    font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
-    line-height: 1.4;
-    font: 10px;
-    display: flex;
-    justify-content: space-around;
-  }
+.menu-items {
+  font-family: 'Raleway', 'Open Sans', helvetica, sans-serif;
+  line-height: 1.4;
+  font: 10px;
+  display: flex;
+  justify-content: space-around;
+}
 
 .menu {
   color: #71277A;
@@ -847,9 +837,9 @@ footer {
   margin: 0;
   padding: 0;
 }
-/* making the header visible under the fixed navbar*/
 
 .gallery-header {
+  /* making the header visible under the fixed navbar*/
   margin-top: 70px;
   background-image: url(../images/purple-bokeh.jpg);
   background-size: cover;
@@ -859,14 +849,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  padding: 10px 25px;
 }
 .gallery-header-col h1 {
   text-align: center;
-  font-size: 58px;
+  font-size: 55px;
   font-variant: small-caps;
   text-shadow: 1px 1px 3px rgba(70, 22, 107, 0.7);
-
 }
 
 /* ---- button ---- */
@@ -878,6 +867,7 @@ align-items: center;
 align-content: center;
 flex-wrap: wrap;
 }
+
 .button-row {
   background-color: white;
   display: flex;
@@ -952,31 +942,20 @@ flex-wrap: wrap;
   clear: both;
 }
 
-/* ---- .element-item ---- */
+/* ---- .grid-item ---- */
 
 .grid-item {
   position: relative;
-  align-items: center;
   float: left;
   width: 200px;
   height: auto;
   margin: 10px;
-  /*padding: 5px 10px;*/
-  color: white;
   background-color: white;
 }
   .grid-item img {
     padding: 5px 5px 20% 5px;
     border: 1px solid gray;
   }
-/*.grid-landscape {
-  max-width: 450px;
-  min-height: auto;
-}
-.grid-portrait {
-  max-height: 450px;
-  max-width: 375px;
-}*/
 
 /* end of gallery page */
 
@@ -1223,17 +1202,16 @@ flex-wrap: wrap;
   background-image: url(../images/purple-bokeh.jpg);
   background-size: cover;
   background-position: center;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
   padding: 30px 50px;
 }
   #staff-header h1 {
     color: #fff;
     font-size: 64px;
     font-weight: 700;
+    text-align: center;
     text-shadow: 1px 1px 3px rgba(70, 22, 107, 0.7);
     font-variant: small-caps;
   }
@@ -1244,23 +1222,24 @@ flex-wrap: wrap;
   #staff-container div .row-fluid {
     margin-top: 25px;
     background-color: white;
-  }
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
 
-.staff-col .row-fluid {
-  cursor: pointer;
-}
+  }
 
 .staff-pic-col {
   background-color: white;
   padding: 10px;
   position: relative;
 }
-.staff-col {
-  display: flex;
-}
+  .staff-col {
+    display: flex;
+  }
 .staff-col:last-child {
   margin-bottom: 25px;
 }
+
 .stylist-social-links-adrian,
   .stylist-social-links-danielle,
   .stylist-social-links-betty,
@@ -1277,18 +1256,18 @@ flex-wrap: wrap;
   .stylist-social-links-anna,
   .stylist-social-links-carmen,
   .stylist-social-links-josephine   {
-    background-color: rgba(240, 120, 0, 0.7);
+    background-color: rgba(240, 120, 0, 0.65);
     border: 15px solid #f07800;
     width: 100%;
     height: 100%;
-    padding: 15% 5% 0 5%;
+    padding: 15% 10%;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 10;
     display: none;
     text-align: center;
 }
-
 #links-show a img {
   width: 85px;
   height: auto;
@@ -1300,7 +1279,6 @@ flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
 }
   .name-title h3 {
     color: #71277a;
@@ -1333,18 +1311,15 @@ flex-wrap: wrap;
   .services-row {
     display: block;
   }
+  /* when the rows goes from 3 columns to two rows, one with 1 col and the other with 2, this brings the middle col to priority number 1 */
   .purple-logo-container {
     order: -1;
     padding: 20px 0 10px 0;
   }
+
   .book-online-2 {
-    height: auto;
-    color: #46166B;
-    background-color: #bc93cc;
-    border: 1px solid gray;
     padding: 10px 30px;
     margin:5% 5% 10% 5%;
-    text-transform: uppercase;
     font-size: 18px;
   }
   .service-img {
@@ -1443,11 +1418,30 @@ flex-wrap: wrap;
   .google-maps {
     padding-bottom: 50%;
   }
-  .grid-item {
-    width: 340px;
-    padding-left: 0;
+  /*.gallery-row {
+    padding: 0;
   }
-  #staff-container div .col-xs-4, #staff-container div .col-xs-8, .staff-col {
+  .grid-item {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .grid-item img {
+    border: none;
+    padding: 0;
+  }*/
+  .gallery-header {
+    margin-top: 70px;
+    height: 100px;
+  }
+  .gallery-header-col h1 {
+    font-size: 34px;
+  }
+  .button-row {
+    padding: 10px 5px 4px 5px;
+  }
+  #staff-container div .col-xs-4,
+    #staff-container div .col-xs-8, .staff-col {
     padding: 0;
     margin: 0;
   }
@@ -1496,26 +1490,23 @@ flex-wrap: wrap;
   #hairAnchor {
     margin-top: 0;
   }
-
 }
 
-@media (min-width: 376px) and (max-width: 451px) {
-  .grid-item {
-    min-width: 375px;
-    max-width: 450px;
-    }
-  .gallery-row {
-    padding-left: 5%;
+@media (min-width: 0px) and (max-width: 767px) {
+  #staff-header {
+    height: 120px;
   }
   #staff-header h1 {
-    font-size: 44px;
+    font-size: 42px;
   }
   .staff-pic-col {
     position: static;
   }
-  .staff-col {
+  .staff-col .row-fluid {
     position: relative;
-    /*display: none;*/
+  }
+  #staff-container div .row-fluid {
+    flex-direction: row;
   }
   .stylist-social-links-adrian,
     .stylist-social-links-danielle,
@@ -1533,58 +1524,91 @@ flex-wrap: wrap;
     .stylist-social-links-anna,
     .stylist-social-links-carmen,
     .stylist-social-links-josephine   {
-      padding: 5% 5% 0 5%;
+      padding: 5%;
       position: absolute;
   }
-  #staff-header h1 {
-    font-size: 44px;
-  }
 }
-
-@media (min-width: 451px) and (max-width: 667px) {
-  .gallery-row {
-    padding-left: 0;
+@media (min-width: 0px) and (max-width: 831px) {
+  /* made the header small to look better for shorter screen height*/
+  .gallery-header {
+    height: 120px;
   }
-  #staff-header h1 {
-    font-size: 44px;
+  .gallery-header-col h1 {
+    font-size: 42px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
-}
-
-@media (min-width: 0px) and (max-width: 768px) {
-  .staff-pic-col {
-    position: relative;
-  }
-  .staff-col {
-    position: static;
-    display: none;
-  }
-  .stylist-social-links-adrian,
-    .stylist-social-links-danielle,
-    .stylist-social-links-betty,
-    .stylist-social-links-nigisti,
-    .stylist-social-links-danita,
-    .stylist-social-links-jessica,
-    .stylist-social-links-jessmaia,
-    .stylist-social-links-julia,
-    .stylist-social-links-luis,
-    .stylist-social-links-tracy,
-    .stylist-social-links-jose,
-    .stylist-social-links-rob,
-    .stylist-social-links-mulan,
-    .stylist-social-links-anna,
-    .stylist-social-links-carmen,
-    .stylist-social-links-josephine   {
-      padding: 5% 5% 0 5%;
-      position: absolute;
-      bottom: 0;
-      z-index: 10;
-  }
-}
-@media (min-width: 667px) and (max-width: 831px) {
+  /* made the buttons smaller to fit in one row and changed padding*/
   .stylist-button button {
     width: auto;
-    font-size: 14px;
+    font-size: 16px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .button-row {
+    padding: 15px 5px 4px 5px;
+  }
+}
+
+@media (max-width: 620px) {
+  #staff-header {
+    height: 140px;
+  }
+  #staff-header h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 553px) {
+  .staff-pic-col {
+    position: static;
+  }
+  .staff-col .row-fluid {
+    position: relative;
+  }
+  #links-show a img {
+    width: 65px;
+  }
+  .stylist-social-links-adrian,
+    .stylist-social-links-danielle,
+    .stylist-social-links-betty,
+    .stylist-social-links-nigisti,
+    .stylist-social-links-danita,
+    .stylist-social-links-jessica,
+    .stylist-social-links-jessmaia,
+    .stylist-social-links-julia,
+    .stylist-social-links-luis,
+    .stylist-social-links-tracy,
+    .stylist-social-links-jose,
+    .stylist-social-links-rob,
+    .stylist-social-links-mulan,
+    .stylist-social-links-anna,
+    .stylist-social-links-carmen,
+    .stylist-social-links-josephine   {
+      position: absolute;
+  }
+}
+
+@media (max-width: 452px) {
+  .gallery-row {
+    padding: 0;
+  }
+  .grid {
+    background-color: black;
+  }
+  .grid-item {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .grid-item img {
+    border: none;
+    padding: 0;
+  }
+}
+
+@media (max-width: 667px) {
+  .gallery-row {
+    padding-left: 0;
   }
 }
