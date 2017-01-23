@@ -1,8 +1,5 @@
 $(document).ready(function(){
 
-// $('.menu-symbol').click(function(){
-//   $('.drop-menu-items').show();
-// });
 
 //***************************************************************
 // js for navbar
@@ -168,45 +165,45 @@ $('.staff-row-josephine').click(function(){
 /**********************************************************************/
  // Buttons to Scroll to div on click
 
-$('#waxingBtn').click(function(e){
+$('#waxingBtn').click(function(){
   $('html, body').animate({
         scrollTop: $("#waxingAnchor").offset().top -160
-    }, 2000);
+    }, 1000);
 });
-$('#makeupBtn').click(function(e){
+$('#makeupBtn').click(function(){
   $('html, body').animate({
         scrollTop: $("#makeupAnchor").offset().top -160
-    }, 2000);
+    }, 1000);
 });
-$('#skinBtn').click(function(e){
+$('#skinBtn').click(function(){
   $('html, body').animate({
         scrollTop: $("#skinAnchor").offset().top -160
-    }, 2000);
+    }, 1000);
 });
-$('#hairBtn').click(function(e){
+$('#hairBtn').click(function(){
   $('html, body').animate({
         scrollTop: $("#hairAnchor").offset().top -160
-    }, 2000);
+    }, 1000);
 });
-$('#spaBtn').click(function(e){
+$('#spaBtn').click(function(){
   $('html, body').animate({
         scrollTop: $("#spaAnchor").offset().top -160
-    }, 2000);
+    }, 1000);
 });
-$('#mediBtn').click(function(e){
+$('#mediBtn').click(function(){
   $('html, body').animate({
         scrollTop: $("#mediAnchor").offset().top -160
-    }, 2000);
+    }, 1000);
 });
-$('#bodyBtn').click(function(e){
+$('#bodyBtn').click(function(){
   $('html, body').animate({
         scrollTop: $("#bodyAnchor").offset().top -160
-    }, 2000);
+    }, 1000);
 });
-$('#nailsBtn').click(function(e){
+$('#nailsBtn').click(function(){
   $('html, body').animate({
         scrollTop: $("#nailsAnchor").offset().top -160
-    }, 2000);
+    }, 1000);
 });
 
 
