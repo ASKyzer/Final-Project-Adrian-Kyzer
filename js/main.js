@@ -1,6 +1,17 @@
 $(document).ready(function(){
 
 
+  // js to animate the sugar house logo on page load
+
+  $("#logo").css({bottom:2000,position:'relative'});
+    $("#logo").animate({top:0}, 1500);
+
+  $("#book-btn").css({right:2000,position:'relative'});
+    $("#book-btn").animate({left:0}, 1500);
+
+  $('#date').animate({
+    'font-size':'16px'}, 1300);
+
 //***************************************************************
 // js for navbar
 (function($) { // Begin jQuery
@@ -26,6 +37,7 @@ $(document).ready(function(){
     });
   }); // end DOM ready
 })(jQuery); // end jQuery
+
 
 //************************************************************************
 // js for menu and prices
