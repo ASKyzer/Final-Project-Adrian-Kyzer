@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Services | Sugar House Day Spa & Salon</title>
+    <meta charset="utf-8">
+    <!--viewport is users screen | initial scale regular zoom 100%-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- fonts from googlefonts -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat" rel="stylesheet">
+    <!-- font-awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--css file with different styling, widgets-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- top navbar with toggle Hamburger menu fixed -->
+  <section class="navigation fixed-navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <a class="navbar-brand" id="top-logo" href="#page-top">Sugar House</a>
+      </div>
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="#!">Home</a>
+          </li>
+          <li>
+            <a href="#!">Services</a>
+          </li>
+          <li>
+            <a href="#!">Gallery</a>
+          </li>
+          <li>
+            <a href="#!">Staff</a>
+          </li>
+          <li>
+            <a href="#!">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <!-- navbar collapse -->
+
+  <!--blank div set to height of navbar so the content can start right below it  -->
+  <div id="top-of-page">
+  </div>
+  <!-- buttons to choose menu category -->
+  <div id="select-menu-category-btn">
+    <div class="stylist-button button-group filters-button-group">
+      <button id="hairBtn" class="button " data-filter="">Hair</button>
+      <button id="nailsBtn" class="button" data-filter="">Nails</button>
+      <button id="makeupBtn" class="button" data-filter="">Make-Up</button>
+      <button id="bodyBtn" class="button" data-filter="">Massage</button>
+      <button id="waxingBtn" class="button" data-filter="">Waxing</button>
+      <button id="skinBtn" class="button" data-filter="">Skin Care</button>
+      <button id="mediBtn" class="button" data-filter="">Medi-Spa</button>
+      <button id="spaBtn" class="button" data-filter="*">Spa Packages</button>
+
+    </div>
+  </div>
+  <!-- hair services container -->
+  <div id="hairAnchor" class="container-fluid service hair">
+    <div class="row services-row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 service-col">
+        <div class="hair-bg">
+          <img src="./images/hairstyling.jpeg" alt="" class="img-responsive service-img" />
+          <img src="./images/hairstyling-small.jpg" alt="" class="img-responsive service-img-hide" />
+          <h4 class="no-pic-category">Haircuts & Colours</h4>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 menu-col">
+        <div class="menu-items">
+          <div class="menu hair-menu">
+            <ul id="hair-menu-list">
+              <!-- space for imported li with class "hair-list-items" from js -->
+            </ul>
+          </div>
+          <div class="price">
+            <ul id="hair-prices">
+              <!-- space for imported li with class "price-hair" from js -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of hair container -->
+  <!-- nails services container -->
+  <div id="nailsAnchor" class="container-fluid service nails">
+    <div class="row services-row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-push-6 col-lg-push-6 service-col">
+        <div class="nails-bg">
+          <img src="./images/manicure.jpg" alt="" class="img-responsive service-img" />
+          <img src="./images/manicure-small.jpg" alt="" class="img-responsive service-img-hide" />
+          <h4 class="no-pic-category">Nails Services</h4>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-pull-6 col-lg-pull-6 menu-col">
+        <div class="menu-items">
+          <div class="menu nails-menu">
+            <ul id="nails-menu-list">
+              <!-- space for imported li with class "nails-list-items" from js -->
+            </ul>
+          </div>
+          <div class="price">
+            <ul id="nails-prices">
+              <!-- space for imported li with class "price-nails" from js -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of nails container -->
+  <!-- makeup services container -->
+  <div id="makeupAnchor" class="container-fluid sercive makeup">
+    <div class="row services-row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 service-col">
+        <div class="makeup-bg">
+          <img src="./images/makeup-brushes.jpg" alt="" class="img-responsive service-img" />
+          <img src="./images/makeup-brushes-small.jpg" alt="" class="img-responsive service-img-hide" />
+          <h4 class="no-pic-category">Makeup Applications</h4>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 menu-col">
+        <div class="menu-items">
+          <div class="menu makeup-menu">
+            <ul id="makeup-menu-list">
+              <p class="semi-perm-items">Semi Permanent Makeup</p>
+            </ul>
+          </div>
+          <div class="price">
+            <ul id="makeup-prices">
+              <p class="semi-perm-price">&nbsp;</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of makeup container -->
+  <!-- facial and skin care services container -->
+  <div  id="skinAnchor" class="container-fluid service skin">
+    <div class="row services-row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-push-6 col-lg-push-6 service-col">
+        <div class="skin-bg">
+          <img src="./images/deep-facial.jpg" alt="" class="img-responsive service-img" />
+          <img src="./images/deep-facial-small.jpg" alt="" class="img-responsive service-img-hide" />
+          <h4 class="no-pic-category">Skin Care</h4>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-pull-6 col-lg-pull-6 menu-col">
+        <div class="menu-items">
+          <div class="menu skin-menu">
+            <ul id="skin-menu-list">
+              <!-- space for imported li with class "nails-list-items" from js -->
+            </ul>
+          </div>
+          <div class="price">
+            <ul id="skin-prices">
+              <!-- space for imported li with class "price-nails" from js -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of facial and skin care container -->
+  <!-- body (massages and body treatments) services container -->
+  <div  id="bodyAnchor" class="container-fluid service body">
+    <div class="row services-row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 service-col">
+        <div class="body-bg">
+          <img src="./images/stone-massage.jpg" alt="" class="img-responsive service-img" />
+          <img src="./images/stone-massage-small.jpg" alt="" class="img-responsive service-img-hide" />
+          <h4 class="no-pic-category">Massages & Body Treatments</h4>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 menu-col">
+        <div class="menu-items">
+          <div class="menu body-menu">
+            <ul id="body-menu-list">
+              <!-- space for imported li with class "body-list-items" from js -->
+            </ul>
+          </div>
+          <div class="price">
+            <ul id="body-prices">
+              <!-- space for imported li with class "price-body" from js -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of body treatment container -->
+  <!-- medical spa and spa packages services container -->
+  <div  id="mediAnchor" class="container-fluid service medi-spa">
+    <div class="row services-row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-push-6 col-lg-push-6 service-col">
+        <div class="medi-spa-bg">
+          <img src="./images/medi-treatment.jpg" alt="" class="img-responsive service-img" />
+          <img src="./images/medi-treatment-small.jpg" alt="" class="img-responsive service-img-hide" />
+          <h4 class="no-pic-category">Medi-Spa with Dr. Gerrish</h4>        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-pull-6 col-lg-pull-6 menu-col">
+        <p class="gerrish">Dr. Scott Gerrish and Associates has partnered with Sugar House Day Spa & Salon to offer cutting edge beauty treatments without the knife.  Dr. Gerrish offers a full spectrum of anti-aging appearance enchancement options using the latest laser technology and state of the art non-surgical medical procedures.<br><br>
+            <span class="medi-offer">Services offered include:</span><br><br><span class="medi-list">Fraxel<br>Ulthreapy<br>Botox<br>Laser Hair Removal<br>Injectables & Fillers<br>Vascular Lasers</span><br><br>
+            Sugar House Day Spa & Salon does not receive pricing iinformation, pricing and specials will be discussed during your complimentary consultation.  Call to book your complimentary consultation today.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- medi-spa container collapse-->
+  <!-- waxing services container -->
+  <div id="waxingAnchor" class="container-fluid service waxing">
+    <div class="row services-row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 service-col">
+        <div class="waxing-bg">
+          <img src="./images/waxing.jpg" alt="" class="img-responsive service-img" />
+          <img src="./images/waxing-small.jpg" alt="" class="img-responsive service-img-hide" />
+          <h4 class="no-pic-category">Waxing</h4>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 menu-col">
+        <div class="menu-items">
+          <div class="menu waxing-menu">
+            <ul id="waxing-menu-list">
+              <!-- space for imported li with class "waxing-list-items" from js -->
+            </ul>
+          </div>
+          <div class="price">
+            <ul id="waxing-prices">
+              <!-- space for imported li with class "price-waxing" from js -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of waxing container -->
+  <!-- medical spa and spa packages services container -->
+  <div  id="spaAnchor" class="container-fluid service medi-spa">
+    <div class="row services-row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-push-6 col-lg-push-6 service-col">
+        <div class="medi-spa-bg">
+          <img src="./images/spa-package.jpg" alt="" class="img-responsive service-img" />
+          <img src="./images/spa-package-small.jpg" alt="" class="img-responsive service-img-hide" />
+          <h4 class="no-pic-category">Spa Packages & Micro-Dermabrasion</h4>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-pull-6 col-lg-pull-6 menu-col">
+        <div class="menu-items">
+          <div class="menu medi-spa-menu">
+            <ul id="medi-spa-menu-list">
+              <p class="spa-packages-menu">Spa Packages</p>
+              <p class="microderm-menu">Micro-Dermabrasion</p>
+              <!-- space for imported li with class "medi-spa-list-items" from js -->
+            </ul>
+          </div>
+          <div class="price">
+            <ul id="medi-spa-prices">
+              <p class="spa-packages-price">&nbsp;</p>
+              <p class="microderm-price">&nbsp;</p>
+              <!-- space for imported li with class "price-medi-spa" from js -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- medi-spa container collapse-->
+  <!-- sugar house logo and book now button container -->
+  <div class="container-fluid book-now-container">
+    <div class="row sh-booknow">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sh-bottom-book">
+        <img src="./images/top-logo-no-bar.png" alt="" class="img-responsive">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sh-bottom-book">
+        <a class="book-online-3" href="#">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <!-- sugar house logo and book now button collapse -->
+</main>
+
+<footer>
+  <a href="http://sugarhousedayspa.com/info">Privacy Policy</a>
+  <a href="http://sugarhousedayspa.com/info">Spa Etiquette</a>
+  <a href="http://sugarhousedayspa.com/info">New Client Offer</a>
+  <a href="http://sugarhousedayspa.com/info">Job Opportunities</a>
+</footer>
+
+    <!--standard jquery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--bootstrap javascript file-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--  my js file -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
