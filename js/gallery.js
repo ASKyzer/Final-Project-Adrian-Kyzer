@@ -56,11 +56,6 @@ $(document).ready(function(){
 
  // external js: isotope.pkgd.js
 
- // init Isotope
- // var $grid = $('.grid').isotope({
- //   itemSelector: '.element-item',
- //   layoutMode: 'fitRows'
- // });
  // filter functions
  var filterFns = {
    // show if number is greater than 50
@@ -89,9 +84,6 @@ $(document).ready(function(){
      $( this ).addClass('is-checked');
    });
  });
-
-
-
 
 
 

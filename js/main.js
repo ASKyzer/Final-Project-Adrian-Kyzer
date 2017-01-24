@@ -220,9 +220,4 @@ $('#nailsBtn').click(function(){
 
 
 
-
-
-
-
-
 }); //end of document ready
