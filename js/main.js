@@ -12,8 +12,7 @@ $(document).ready(function(){
       'font-size':'16px'}, 1300);
 
 // sliding the <hr> bar and book now button on contact page upon load
-
-  $("#orangeBar").css({right:2000,position:'relative'});
+$("#orangeBar").css({right:2000,position:'relative'});
     $("#orangeBar").animate({left:0}, 1000);
 
   $("#bookNowBtn").css({right:-2000,position:'relative'});
@@ -21,7 +20,7 @@ $(document).ready(function(){
 
     $('#getInTouch').animate({
       'font-size':'60px'}, 1000);
-
+      
 //***************************************************************
 // js for navbar
   (function($) { // Begin jQuery
