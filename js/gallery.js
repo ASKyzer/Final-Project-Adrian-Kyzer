@@ -53,22 +53,11 @@ $(document).ready(function(){
    });
  });
 
-
  // external js: isotope.pkgd.js
 
  // filter functions
- var filterFns = {
-   // show if number is greater than 50
-   numberGreaterThan50: function() {
-     var number = $(this).find('.number').text();
-     return parseInt( number, 10 ) > 50;
-   },
-   // show if name ends with -ium
-   ium: function() {
-     var name = $(this).find('.name').text();
-     return name.match( /ium$/ );
-   }
- };
+ var filterFns = { };
+
  // bind filter button click
  $('.filters-button-group').on( 'click', 'button', function() {
    var filterValue = $( this ).attr('data-filter');
@@ -84,7 +73,6 @@ $(document).ready(function(){
      $( this ).addClass('is-checked');
    });
  });
-
 
 
 
